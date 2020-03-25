@@ -1,10 +1,5 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Элла Сидорова](https://up.htmlacademy.ru/adaptive/19/user/147338).
-* Наставник: `Неизвестно`.
-
----
-
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
 Полезный файл:
