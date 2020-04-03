@@ -1,0 +1,36 @@
+.page-footer {
+  background-color: $lightgrey;
+}
+.page-footer__inner {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+  border-bottom: 2px solid $grey;
+}
+.copyrights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+.copyrights__link {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $black;
+}
+.copyrights__link-logo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+

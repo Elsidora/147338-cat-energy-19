@@ -1,0 +1,24 @@
+.promo {
+  //background: $lightgreen;
+  height: 438px;
+  background-image: linear-gradient($lightgreen 305px, $white 305px, $white 438px);
+}
+.promo__inner {
+  outline: 2px solid violet;
+  height: 438px;
+  padding: 0 30px;
+  padding-top: 10px;
+  text-align: center;
+}
+.promo__title {
+  line-height: 36px;
+  color: $white;
+}
+.promo__paragraph {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-size: 14px;
+  color: $white;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+

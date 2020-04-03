@@ -1,0 +1,73 @@
+.page-header {
+  background-color: $white;
+}
+.page-header__inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 191px;
+  height: 66px;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 2;
+  margin-right: -154px;
+  outline: 2px solid yellow;
+}
+.main-nav {
+  position: relative;
+  width: 320px;
+  min-height: 66px;
+  margin: 0 auto;
+  //outline: 2px solid green;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 66px;
+  border-bottom: 2px solid $grey;
+  //outline: 2px solid red;
+}
+.main-nav__item {
+  list-style: none;
+  width: 320px;
+  border-top: 2px solid #e6e6e6;
+  padding: 22px 0;
+  text-align: center;
+}
+.main-nav__link {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+}
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 65px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: 2px solid red;
+}
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 0;
+  width: 25px;
+  height: 3px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}

@@ -1,0 +1,50 @@
+.example {
+  background-color: $lightgrey;
+}
+.example__inner {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  outline: 2px solid yellow;
+}
+.example__description {
+  padding-right: 10px;
+}
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.example__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.example__item-value {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 124px;
+  padding: 17px 0;
+  text-align: center;
+  border: 2px solid $grey;
+  border-radius: 2px;
+}
+.example__item-description {
+  width: 84px;
+  padding: 0 5px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin-top: -10px;
+  background-color: $lightgrey;
+}
+.example__paragraph {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+

@@ -1,0 +1,27 @@
+.contacts {
+  margin: 0 auto;
+  padding-top: 74px;
+  height: 474px;
+}
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -74px;
+  background-color: $white;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  outline: 2px solid red;
+}
+.contacts__paragraph {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $black;
+  text-transform: uppercase;
+}
+.contacts__address {
+  line-height: 20px;
+  font-style: normal;
+}

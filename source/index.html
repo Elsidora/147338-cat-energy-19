@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Проект сайта интернет-магазина кошачьего питания</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="page-header">
@@ -55,7 +56,7 @@
           <ul class="features__list">
             <li class="features__item"><p class="features__paragraph">Функциональное питание содержит только полезные питательные вещества</p></li>
             <li class="features__item"><p class="features__paragraph">Выпускается в виде порошка, который нужно лишь залить кипятком и готово</p></li>
-            <li class="features__item"><p class="features__paragraph">Замените один-два приема обычной еды на наше функциональное питание</p>></li>
+            <li class="features__item"><p class="features__paragraph">Замените один-два приема обычной еды на наше функциональное питание</p></li>
             <li class="features__item"><p class="features__paragraph">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца</p></li>
           </ul>
         </div>
@@ -72,16 +73,16 @@
           <div class="example__slider slider">
             <ul class="slider__list">
               <li class="slider__item slider__item--prev"></li>
-              <li class="slider__item slider__item--next"></li>
+              <li class="slider__item slider__item--next visually-hidden"></li>
             </ul>
             <div class="slider__controls">
-              <input type="radio" id="prev" name="radio" value="prev" checked>
-              <input type="radio" id="next" name="radio" value="next">
+              <input class="visually-hidden" type="radio" id="prev" name="radio" value="prev" checked>
+              <input class="visually-hidden" type="radio" id="next" name="radio" value="next">
               <div class="slider__buttons">
                 <span class="slider__description">Было</span>
                 <div class="slider__labels">
-                  <label for="prev"></label>
-                  <label for="next"></label>
+                  <label class="slider__label slider__label--active" for="prev"></label>
+                  <label class="slider__label slider__label--no-active" for="next"></label>
                 </div>
                 <span class="slider__description">Стало</span>
               </div>
@@ -90,12 +91,12 @@
         </div>
       </section>
       <section class="contacts">
+        <img src="" alt="Карта-месторасположение интернет-магазина" width="320" height="400">
         <div class="contacts__inner container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__paragraph">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-        <img src="" alt="Карта-месторасположение интернет-магазина" width="320" height="400">
       </section>
     </main>
     <footer class="page-footer">
