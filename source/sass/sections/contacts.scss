@@ -8,10 +8,13 @@
   justify-content: space-between;
   align-items: center;
   margin-top: -74px;
-  background-color: $white;
+  background-color: $lightgrey;
   padding-top: 27px;
   padding-bottom: 27px;
   outline: 2px solid red;
+  &--index {
+    background-color: $white;
+  }
 }
 .contacts__paragraph {
   font-family: 'Oswald', 'Arial', sans-serif;

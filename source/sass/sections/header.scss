@@ -5,10 +5,11 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  min-height: 66px;
 }
 .logo {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: relative;
   width: 191px;
@@ -16,29 +17,75 @@
   padding-left: 0;
   padding-right: 0;
   z-index: 2;
-  margin-right: -154px;
-  outline: 2px solid yellow;
+  margin: 0;
+  margin-right: -191px;
 }
 .main-nav {
   position: relative;
-  width: 320px;
-  min-height: 66px;
+  flex-grow: 1;
   margin: 0 auto;
-  //outline: 2px solid green;
+  &--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 3px;
+    background-color: $black;
+    box-shadow: 0 8px 0 0 $black, 0 -8px 0 0 $black;
+  }
+  &--opened .main-nav__toggle::before,
+  &--opened .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 34px;
+    height: 2px;
+    background-color: $black;
+  }
+  &--opened .main-nav__toggle::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  &--opened .main-nav__toggle::after {
+    transform: rotate(-45deg);
+  }
+  &--nojs .main-nav__toggle {
+    display: none;
+  }
+  &--nojs .main-nav__list {
+    display: block;
+  }
+  &--closed .main-nav__list {
+    display: none;
+  }
+  &--opened .main-nav--list {
+    display: block;
+  }
+
 }
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   padding-top: 66px;
-  border-bottom: 2px solid $grey;
-  //outline: 2px solid red;
 }
 .main-nav__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  width: 320px;
-  border-top: 2px solid #e6e6e6;
-  padding: 22px 0;
-  text-align: center;
+  padding: 0;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: $mobile;
+    height: 2px;
+    background-color: $grey;
+  }
 }
 .main-nav__link {
   font-family: 'Oswald', 'Arial', sans-serif;
@@ -47,27 +94,18 @@
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+  padding: 23px 0;
 }
 .main-nav__toggle {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
-  display: block;
+  display: flex;
+  align-items: center;
   width: 70px;
   height: 65px;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  outline: 2px solid red;
-}
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 23px;
-  left: 0;
-  width: 25px;
-  height: 3px;
-  background-color: $black;
-  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
 }
