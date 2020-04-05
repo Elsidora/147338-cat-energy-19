@@ -8,7 +8,7 @@
   </head>
   <body class="page page--form">
     <header class="page-header line-grey">
-      <div class="page-header__inner container">
+      <div class="page-header__inner">
         <a href="index.html" class="page-header__logo logo">
           <img src="img/logo-mobile.svg" alt="Иконка логотипа Кэт Энерджи" width="191" height="38">
           <!--<img src="" alt="Cat-energy" width="101" height="18">-->
@@ -27,9 +27,9 @@
     <main class="page-content page-content--form">
       <h1 class="page-title container">Подбор программы</h1>
       <section class="user-data">
-        <div class="user-data__inner container">
+        <div class="user-data__inner">
           <h2 class="visually-hidden">Данные пользователя для подбора программы</h2>
-          <p class="user-data__paragraph">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <p class="user-data__paragraph container">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <form action="https://echo.htmlacademy.ru" method="GET" class="form">
             <fieldset class="form__info-cat">
               <ul class="form__list">
@@ -113,9 +113,14 @@
         <div class="contacts__inner container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__paragraph">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address">
+            <span class="contacts__avenu">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__city">Санкт-Петербург</span>
+          </address>
         </div>
-        <img src="" alt="Карта-месторасположение интернет-магазина" width="320" height="400">
+        <picture>
+          <img src="" alt="Карта-месторасположение интернет-магазина" width="320" height="400">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">

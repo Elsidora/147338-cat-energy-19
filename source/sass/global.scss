@@ -16,6 +16,11 @@ img {
 a {
   text-decoration: none;
 }
+.page {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  color: $black;
+}
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -31,15 +36,13 @@ a {
 }
 
 .container {
-  width: 320px;
+  width: $mobile;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
-  color: $black;
 }
+
 .page-title {
   font-family: 'Oswald', 'Arial', sans-serif;
   font-size: 36px;
@@ -71,4 +74,16 @@ a {
 }
 .line-grey {
   border-bottom: 2px solid $grey;
+}
+@media (min-width: $tablet) {
+  .container {
+    width: $tablet;
+    margin: 0;
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .title {
+    font-size: 60px;
+  }
 }

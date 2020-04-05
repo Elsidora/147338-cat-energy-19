@@ -34,3 +34,18 @@
   align-items: center;
 }
 
+@media (min-width: $tablet) {
+  .page-footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-logo {
+    padding: 55px 0;
+    border-bottom: none;
+  }
+  .copyrights {
+    padding: 55px 0;
+  }
+}
+

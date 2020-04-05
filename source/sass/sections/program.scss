@@ -4,12 +4,7 @@
 .program__inner {
   outline: 2px solid red;
 }
-.program__link-button {
-  margin: 3px 0;
-  font-size: 14px;
-  line-height: 18px;
-  padding: 11px 0;
-}
+
 .program__list {
   display: flex;
   flex-direction: column;
@@ -47,4 +42,27 @@
   color: $black;
   text-transform: uppercase;
   padding: 15px 0;
+}
+@media (min-width: $tablet) {
+  .program__list {
+    padding-top: 0;
+  }
+  .program__item {
+    padding: 55px;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  .program__title {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 37px;
+  }
+  .program__description {
+    border: none;
+    width: 372px;
+  }
+  .program__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

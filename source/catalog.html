@@ -8,7 +8,7 @@
   </head>
   <body class="page page--catalog">
     <header class="page-header line-grey">
-      <div class="page-header__inner container">
+      <div class="page-header__inner">
         <a href="index.html" class="page-header__logo logo">
           <img src="img/logo-mobile.svg" alt="Иконка логотипа Кэт Энерджи" width="191" height="38">
           <!--<img src="" alt="Cat-energy" width="101" height="18">-->
@@ -27,13 +27,15 @@
     <main class="page-content page-content--catalog">
       <h1 class="page-title container">Каталог продукции</h1>
       <section class="catalog">
-        <div class="catalog__inner container">
+        <div class="catalog__inner">
           <h2 class="visually-hidden">Каталог продуктов для кошек</h2>
           <ul class="catalog__list">
             <li class="catalog__item">
               <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Pro Курица 500г">
+                  <picture>
+                    <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Курица 500г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
@@ -60,7 +62,9 @@
             <li class="catalog__item">
               <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Pro Курица 1000г">
+                  <picture>
+                    <img src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Курица 1000г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
@@ -87,7 +91,9 @@
             <li class="catalog__item">
               <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Pro Рыба 500 г">
+                  <picture>
+                    <img src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Рыба 500 г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
@@ -114,8 +120,10 @@
             <li class="catalog__item">
               <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Pro Рыба 1000 г">
-                </a>
+                  <picture>
+                    <img src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Рыба 1000 г">
+                  </picture>
+                  </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
                     <h3 class="catalog__item-title item-title">Cat Energy Pro 1000 г</h3>
@@ -141,7 +149,9 @@
             <li class="catalog__item">
               <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Slim Гречка 500 г">
+                  <picture>
+                    <img src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim Гречка 500 г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
@@ -168,7 +178,9 @@
             <li class="catalog__item">
               <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Slim Гречка 1000 г">
+                  <picture>
+                    <img src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim Гречка 1000 г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
@@ -195,7 +207,9 @@
             <li class="catalog__item">
               <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Slim Рис 500 г">
+                  <picture>
+                    <img src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim Рис 500 г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
@@ -276,9 +290,14 @@
         <div class="contacts__inner container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__paragraph">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address">
+            <span class="contacts__avenu">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__city">Санкт-Петербург</span>
+          </address>
         </div>
-        <img src="" alt="Карта-месторасположение интернет-магазина" width="320" height="400">
+        <picture>
+          <img src="" alt="Карта-месторасположение интернет-магазина" width="320" height="400">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">

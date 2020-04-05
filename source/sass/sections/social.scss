@@ -18,3 +18,8 @@
 .social__link {
   padding: 20px;
 }
+@media (min-width: $tablet) {
+  .social {
+    border-bottom: none;
+  }
+}

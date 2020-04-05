@@ -4,7 +4,6 @@
 .example__inner {
   padding-top: 15px;
   padding-bottom: 15px;
-  outline: 2px solid yellow;
 }
 .example__description {
   padding-right: 10px;
@@ -45,6 +44,48 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+@media (min-width: $tablet) {
+  .example {
+    min-height: 1082px;
+    background-image: linear-gradient($white 620px, $lightgrey 620px, $lightgrey 1082px);
+  }
+  .example__inner {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .example__description {
+    margin-bottom: 50px;
+  }
+  .example__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .example__list {
+    width: 365px;
+  }
+  .example__item-value {
+    font-size: 30px;
+    line-height: 38px;
+    width: 162px;
+  }
+  .example__item-description {
+    background-color: $white;
+    width: auto;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: -18px;
+  }
+  .example__paragraph {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: right;
+    width: 175px;
+    margin: 0;
+  }
+
 }
 
 

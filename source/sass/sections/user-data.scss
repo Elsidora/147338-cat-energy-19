@@ -8,24 +8,21 @@
 .form__contacts,
 .form__area,
 .form__checkbox {
-  position: relative;
   border: none;
-  padding: 0;
+  width: $mobile;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
   padding-top: 25px;
   padding-bottom: 25px;
   font-family: 'Oswald', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 18px;
 }
-.form__info-cat::before,
-.form__radio::before {
-  content: "";
-  position: absolute;
-  left: -20px;
-  bottom: 0;
-  width: $mobile;
-  height: 2px;
-  background-color: $grey;
+.form__info-cat,
+.form__radio {
+  border-bottom: 2px solid $grey;
 }
 .form__list {
   margin: 0;

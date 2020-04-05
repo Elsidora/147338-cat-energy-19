@@ -12,27 +12,13 @@
   flex-direction: column;
   position: relative;
   list-style: none;
+  width: $mobile;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
   padding-bottom: 25px;
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-    width: 320px;
-    height: 2px;
-    background-color: $grey;
-    z-index: 20;
-  }
-  /*&::before /*{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100vw;
-    height: 2px;
-    background-color: $grey;
-    z-index: 20;
-  }*/
+  border-bottom: 2px solid $grey;
 }
 .catalog__item-wrap {
   display: flex;
