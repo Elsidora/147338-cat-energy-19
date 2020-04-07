@@ -1,6 +1,6 @@
 .promo {
   //background: $lightgreen;
-  background-image: url('../../img/index-background-mobile@1x.jpg'), linear-gradient($lightgreen 305px, $white 305px, $white 484px);
+  background-image: url('../img/index-background-mobile@1x.jpg'), linear-gradient($lightgreen 305px, $white 305px, $white 484px);
   background-position: top 0 left calc(100% / 2), top 0 left 0;
   background-repeat: no-repeat;
 }
@@ -11,20 +11,18 @@
   min-height: 484px;
   text-align: center;
   padding-top: 40px;
-  background-image: url('../../img/index-can-mobile@1x.png');
+  color: $white;
+  background-image: url('../img/index-can-mobile@1x.png');
   background-position: bottom 46px left calc(100% / 2);
   background-repeat: no-repeat;
 }
 .promo__title {
   line-height: 36px;
-  color: $white;
   margin: 0;
-
 }
 .promo__paragraph {
   font-family: 'Oswald', 'Arial', sans-serif;
   font-size: 14px;
-  color: $white;
   line-height: 14px;
   text-transform: uppercase;
 }
@@ -42,21 +40,20 @@
     background-color: $white;
   }
   .promo__inner {
-    background-image: url('../../img/index-can-tablet@1x.jpg');
+    background-image: url('../img/index-can-tablet@1x.jpg');
     background-position: bottom 0 left center;
     background-repeat: no-repeat;
     min-height: 852px;
     padding-left: 119px;
     padding-right: 75px;
     text-align: left;
+    color: $black;
   }
   .promo__title {
-    color: $black;
     line-height: 60px;
     margin-bottom: 30px;
   }
   .promo__paragraph {
-    color: $black;
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 40px;

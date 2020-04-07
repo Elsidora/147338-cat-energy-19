@@ -14,13 +14,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 191px;
+  width: 211px;
   height: 66px;
   padding-left: 20px;
   padding-right: 0;
   z-index: 2;
   margin: 0;
-  margin-right: -191px;
+  margin-right: -211px;
 }
 .main-nav {
   position: relative;
@@ -66,14 +66,15 @@
 }
 .main-nav__item {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   list-style: none;
   padding: 0;
   border-top: 2px solid $grey;
 }
 .main-nav__link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   font-family: 'Oswald', 'Arial', sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -81,6 +82,7 @@
   color: $black;
   text-transform: uppercase;
   padding: 23px 0;
+
 }
 .main-nav__toggle {
   position: absolute;
@@ -151,6 +153,7 @@
     font-weight: 400;
     line-height: 24px;
     padding: 17px 0;
+    cursor: pointer;
   }
   .main-nav__toggle {
     display: none;

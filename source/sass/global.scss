@@ -18,6 +18,8 @@ a {
 }
 .page {
   font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 400;
   color: $black;
 }
@@ -39,8 +41,6 @@ a {
   width: $mobile;
   margin: 0 auto;
   padding: 0 20px;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .page-title {
@@ -76,12 +76,14 @@ a {
   border-bottom: 2px solid $grey;
 }
 @media (min-width: $tablet) {
-  .container {
-    width: $tablet;
-    margin: 0 auto;
-    padding: 0 30px;
+  .page {
     font-size: 16px;
     line-height: 24px;
+  }
+  .container {
+    width: $tablet;
+    padding: 0 30px;
+
   }
   .title {
     font-size: 60px;
