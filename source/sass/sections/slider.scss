@@ -1,0 +1,45 @@
+.slider__list {
+  margin: 0;
+  padding: 0;
+}
+.slider__item {
+  list-style: none;
+  width: 320px;
+  margin: 0 auto;
+  height: 240px;
+}
+.slider__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__description {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.slider__labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 84px;
+  background-color: $white;
+  padding: 6px;
+  height: 6px;
+  border: 1px solid $grey;
+  border-radius: 5px;
+}
+.slider__label {
+  width: 35px;
+  height: 6px;
+  &--active {
+  background-color: $lightgreen;
+  border-radius: 5px;
+  }
+  &--no-active {
+    cursor: pointer;
+  }
+}

@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>Форма сайта интернет-магазина кошачьего питания</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page page--form">
-    <header class="page-header">
-      <div class="page-header__inner container">
+    <header class="page-header line-grey">
+      <div class="page-header__inner">
         <a href="index.html" class="page-header__logo logo">
-          <img src="" alt="Иконка логотипа Кэт Энерджи" width="33" height="38">
-          <img src="" alt="Cat-energy" width="101" height="18">
+          <img src="img/logo-mobile.svg" alt="Иконка логотипа Кэт Энерджи" width="191" height="38">
+          <!--<img src="" alt="Cat-energy" width="101" height="18">-->
         </a>
         <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -24,11 +25,11 @@
       </div>
     </header>
     <main class="page-content page-content--form">
-      <h1 class="page-title">Подбор программы</h1>
+      <h1 class="page-title container">Подбор программы</h1>
       <section class="user-data">
-        <div class="user-data__inner container">
+        <div class="user-data__inner">
           <h2 class="visually-hidden">Данные пользователя для подбора программы</h2>
-          <p class="user-data__paragraph">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <p class="user-data__paragraph container">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <form action="https://echo.htmlacademy.ru" method="GET" class="form">
             <fieldset class="form__info-cat">
               <ul class="form__list">
@@ -67,11 +68,11 @@
               <ul class="form__list">
                 <li class="form__item form__item--contacts">
                   <label class="form__label form__label--contact" for="email">e-mail:<sup>*</sup></label>
-                  <input class="form__input" type="email" id="email" name="email" placeholder="Kuklachev@gmail.com" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+                  <input class="form__input form__input--email" type="email" id="email" name="email" placeholder="Kuklachev@gmail.com" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
                 </li>
                 <li class="form__item form__item--contacts">
                   <label class="form__label form__label--contact" for="phone">телефон:<sup>*</sup></label>
-                  <input class="form__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" pattern="[8]\s[\(]{1}[0-9]{3}[\)]{1}\s[0-9]{3}[\-]{1}[0-9]{2}[\-]{1}[0-9]{2}" required>
+                  <input class="form__input form__input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" pattern="[8]\s[\(]{1}[0-9]{3}[\)]{1}\s[0-9]{3}[\-]{1}[0-9]{2}[\-]{1}[0-9]{2}" required>
                 </li>
               </ul>
             </fieldset>
@@ -102,7 +103,7 @@
               </ul>
             </fieldset>
             <div class="form__button-wrap">
-              <button type="submit" class="form__button link">Отправить заявку</button>
+              <button type="submit" class="form__button link-button">Отправить заявку</button>
               <p class="form__required-field"><sup>*</sup> - Обязательные поля</p>
             </div>
           </form>
@@ -112,9 +113,14 @@
         <div class="contacts__inner container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__paragraph">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address">
+            <span class="contacts__avenu">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__city">Санкт-Петербург</span>
+          </address>
         </div>
-        <img src="" alt="Карта-месторасположение интернет-магазина" width="320" height="400">
+        <picture>
+          <img src="img/bg-map-mobile@1x.png" alt="Карта-месторасположение интернет-магазина" width="320" height="400">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">
@@ -141,6 +147,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/nav.js"></script>
   </body>
 </html>

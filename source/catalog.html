@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>Каталог сайта интернет-магазина кошачьего питания</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page page--catalog">
-    <header class="page-header">
-      <div class="page-header__inner container">
+    <header class="page-header line-grey">
+      <div class="page-header__inner">
         <a href="index.html" class="page-header__logo logo">
-          <img src="" alt="Иконка логотипа Кэт Энерджи" width="33" height="38">
-          <img src="" alt="Cat-energy" width="101" height="18">
+          <img src="img/logo-mobile.svg" alt="Иконка логотипа Кэт Энерджи" width="191" height="38">
+          <!--<img src="" alt="Cat-energy" width="101" height="18">-->
         </a>
         <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -24,157 +25,213 @@
       </div>
     </header>
     <main class="page-content page-content--catalog">
-      <h1 class="page-title">Каталог продукции</h1>
+      <h1 class="page-title container">Каталог продукции</h1>
       <section class="catalog">
-        <div class="catalog__inner container">
+        <div class="catalog__inner">
           <h2 class="visually-hidden">Каталог продуктов для кошек</h2>
           <ul class="catalog__list">
             <li class="catalog__item">
               <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Pro Курица 500г">
+                  <picture>
+                    <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Курица 500г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
                     <h3 class="catalog__item-title item-title">Cat Energy Pro 500 г</h3>
                   </a>
                   <dl class="catalog__list-inner">
-                    <dt class="catalog__product-description">Объем</dt>
-                    <dd class="catalog__product-description">500 г</dd>
-                    <dt class="catalog__product-description">Вкус</dt>
-                    <dd class="catalog__product-description">Курица</dd>
-                    <dt class="catalog__product-description">Цена</dt>
-                    <dd class="catalog__product-description">700 Р.</dd>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Объем</dt>
+                      <dd class="catalog__product-description">500 г</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Вкус</dt>
+                      <dd class="catalog__product-description">Курица</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Цена</dt>
+                      <dd class="catalog__product-description">700 Р.</dd>
+                    </div>
                   </dl>
                 </div>
               </div>
-              <a href="#" class="catalog__link link">Заказать</a>
+              <a href="#" class="catalog__link link-button">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-inner">
+              <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Pro Курица 1000г">
+                  <picture>
+                    <img src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Курица 1000г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
                     <h3 class="catalog__item-title item-title">Cat Energy Pro 1000 г</h3>
                   </a>
                   <dl class="catalog__list-inner">
-                    <dt class="catalog__product-description">Объем</dt>
-                    <dd class="catalog__product-description">1000 г</dd>
-                    <dt class="catalog__product-description">Вкус</dt>
-                    <dd class="catalog__product-description">Курица</dd>
-                    <dt class="catalog__product-description">Цена</dt>
-                    <dd class="catalog__product-description">1000 Р.</dd>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Объем</dt>
+                      <dd class="catalog__product-description">1000 г</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Вкус</dt>
+                      <dd class="catalog__product-description">Курица</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Цена</dt>
+                      <dd class="catalog__product-description">1000 Р.</dd>
+                    </div>
                   </dl>
                 </div>
               </div>
-              <a href="#" class="catalog__link link">Заказать</a>
+              <a href="#" class="catalog__link link-button">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-inner">
+              <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Pro Рыба 500 г">
+                  <picture>
+                    <img src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Рыба 500 г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
                     <h3 class="catalog__item-title item-title">Cat Energy Pro 500 г</h3>
                   </a>
                   <dl class="catalog__list-inner">
-                    <dt class="catalog__product-description">Объем</dt>
-                    <dd class="catalog__product-description">500 г</dd>
-                    <dt class="catalog__product-description">Вкус</dt>
-                    <dd class="catalog__product-description">Рыба</dd>
-                    <dt class="catalog__product-description">Цена</dt>
-                    <dd class="catalog__product-description">700 Р.</dd>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Объем</dt>
+                      <dd class="catalog__product-description">500 г</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Вкус</dt>
+                      <dd class="catalog__product-description">Рыба</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Цена</dt>
+                      <dd class="catalog__product-description">700 Р.</dd>
+                    </div>
                   </dl>
                 </div>
               </div>
-              <a href="#" class="catalog__link link">Заказать</a>
+              <a href="#" class="catalog__link link-button">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-inner">
+              <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Pro Рыба 1000 г">
-                </a>
+                  <picture>
+                    <img src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Рыба 1000 г">
+                  </picture>
+                  </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
                     <h3 class="catalog__item-title item-title">Cat Energy Pro 1000 г</h3>
                   </a>
                   <dl class="catalog__list-inner">
-                    <dt class="catalog__product-description">Объем</dt>
-                    <dd class="catalog__product-description">500 г</dd>
-                    <dt class="catalog__product-description">Вкус</dt>
-                    <dd class="catalog__product-description">Рыба</dd>
-                    <dt class="catalog__product-description">Цена</dt>
-                    <dd class="catalog__product-description">1000 Р.</dd>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Объем</dt>
+                      <dd class="catalog__product-description">1000 г</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Вкус</dt>
+                      <dd class="catalog__product-description">Рыба</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Цена</dt>
+                      <dd class="catalog__product-description">1000 Р.</dd>
+                    </div>
                   </dl>
                 </div>
               </div>
-              <a href="#" class="catalog__link link">Заказать</a>
+              <a href="#" class="catalog__link link-button">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-inner">
+              <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Slim Гречка 500 г">
+                  <picture>
+                    <img src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim Гречка 500 г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
                     <h3 class="catalog__item-title item-title">Cat Energy Slim 500 г</h3>
                   </a>
                   <dl class="catalog__list-inner">
-                    <dt class="catalog__product-description">Объем</dt>
-                    <dd class="catalog__product-description">500 г</dd>
-                    <dt class="catalog__product-description">Вкус</dt>
-                    <dd class="catalog__product-description">Гречка</dd>
-                    <dt class="catalog__product-description">Цена</dt>
-                    <dd class="catalog__product-description">400 Р.</dd>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Объем</dt>
+                      <dd class="catalog__product-description">500 г</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Вкус</dt>
+                      <dd class="catalog__product-description">Гречка</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Цена</dt>
+                      <dd class="catalog__product-description">400 Р.</dd>
+                    </div>
                   </dl>
                 </div>
               </div>
-              <a href="#" class="catalog__link link">Заказать</a>
+              <a href="#" class="catalog__link link-button">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-inner">
+              <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Slim Гречка 1000 г">
+                  <picture>
+                    <img src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim Гречка 1000 г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
                     <h3 class="catalog__item-title item-title">Cat Energy Slim 1000 г</h3>
                   </a>
                   <dl class="catalog__list-inner">
-                    <dt class="catalog__product-description">Объем</dt>
-                    <dd class="catalog__product-description">1000 г</dd>
-                    <dt class="catalog__product-description">Вкус</dt>
-                    <dd class="catalog__product-description">Гречка</dd>
-                    <dt class="catalog__product-description">Цена</dt>
-                    <dd class="catalog__product-description">700 Р.</dd>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Объем</dt>
+                      <dd class="catalog__product-description">1000 г</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Вкус</dt>
+                      <dd class="catalog__product-description">Гречка</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Цена</dt>
+                      <dd class="catalog__product-description">700 Р.</dd>
+                    </div>
                   </dl>
                 </div>
               </div>
-              <a href="#" class="catalog__link link">Заказать</a>
+              <a href="#" class="catalog__link link-button">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-inner">
+              <div class="catalog__item-wrap">
                 <a href="#" class="catalog__img-link">
-                  <img src="" width="140" height="144" alt="Cat Energy Slim Рис 500 г">
+                  <picture>
+                    <img src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim Рис 500 г">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <a href="#" class="catalog__title-link">
                     <h3 class="catalog__item-title item-title">Cat Energy Slim 500 г</h3>
                   </a>
                   <dl class="catalog__list-inner">
-                    <dt class="catalog__product-description">Объем</dt>
-                    <dd class="catalog__product-description">500 г</dd>
-                    <dt class="catalog__product-description">Вкус</dt>
-                    <dd class="catalog__product-description">Рис</dd>
-                    <dt class="catalog__product-description">Цена</dt>
-                    <dd class="catalog__product-description">500 Р.</dd>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Объем</dt>
+                      <dd class="catalog__product-description">500 г</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Вкус</dt>
+                      <dd class="catalog__product-description">Рис</dd>
+                    </div>
+                    <div class="catalog__value-wrap">
+                      <dt class="catalog__product-description">Цена</dt>
+                      <dd class="catalog__product-description">500 Р.</dd>
+                    </div>
                   </dl>
                 </div>
               </div>
-              <a href="#" class="catalog__link link">Заказать</a>
+              <a href="#" class="catalog__link link-button">Заказать</a>
             </li>
           </ul>
         </div>
@@ -182,22 +239,22 @@
       <section class="show-goods">
         <div class="show-goods__inner container">
           <h2 class="visually-hidden">Все товары</h2>
-          <a href="#" class="show-goods__offers">Показать еще 100500 товаров</a>
+          <a href="#" class="show-goods__offers link-button">Показать еще 100500 товаров</a>
           <p class="show-goods__paragraph">На самом деле вкусов гораздо больше!</p>
-          <a href="#" class="show-goods__link link">Показать все</a>
+          <a href="#" class="show-goods__link link-button">Показать все</a>
         </div>
       </section>
       <section class="extra">
         <div class="extra__inner container">
           <h2 class="extra__title title">Дополнительные товары</h2>
-          <ul class="extra__list">
+          <ul class="extra__list line-grey">
             <li class="extra__item">
               <h3 class="extra__item-title item-title">Сахарозаменитель</h3>
               <div class="extra__item-description">
                 <span class="extra__span-description">1 упаковка (100 г)</span>
                 <span class="extra__span-description">200 Р.</span>
               </div>
-              <a href="#" class="extra__link link">Заказать</a>
+              <a href="#" class="extra__link link-button">Заказать</a>
             </li>
             <li class="extra__item">
               <h3 class="extra__item-title item-title">Питьевая вода</h3>
@@ -205,7 +262,7 @@
                 <span class="extra__span-description">5 литров</span>
                 <span class="extra__span-description">50 Р.</span>
               </div>
-              <a href="#" class="extra__link link">Заказать</a>
+              <a href="#" class="extra__link link-button">Заказать</a>
             </li>
             <li class="extra__item">
               <h3 class="extra__item-title item-title">Молоко</h3>
@@ -213,7 +270,7 @@
                 <span class="extra__span-description">1 литр</span>
                 <span class="extra__span-description">100 Р.</span>
               </div>
-              <a href="#" class="extra__link link">Заказать</a>
+              <a href="#" class="extra__link link-button">Заказать</a>
             </li>
             <li class="extra__item">
               <h3 class="extra__item-title item-title">Витамины</h3>
@@ -221,21 +278,26 @@
                 <span class="extra__span-description">1 упаковка (30 г)</span>
                 <span class="extra__span-description">300 Р.</span>
               </div>
-              <a href="#" class="extra__link link">Заказать</a>
+              <a href="#" class="extra__link link-button">Заказать</a>
             </li>
           </ul>
-          <div class="extra__present present">
-            <p class="present__paragraph">Закажите все и получите чехол для кота в подарок!</p>
-          </div>
+          <a href="present.html" class="extra__present present">
+            <p class="present__paragraph">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+          </a>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__inner container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__paragraph">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address">
+            <span class="contacts__avenu">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__city">Санкт-Петербург</span>
+          </address>
         </div>
-        <img src="" alt="Карта-месторасположение интернет-магазина" width="320" height="400">
+        <picture>
+          <img src="img/bg-map-mobile@1x.png" alt="Карта-месторасположение интернет-магазина" width="320" height="400">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">
@@ -262,6 +324,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/nav.js"></script>
   </body>
 </html>
