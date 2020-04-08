@@ -71,6 +71,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   padding: 10px 0;
+  cursor: pointer;
 }
 .line-grey {
   border-bottom: 2px solid $grey;
@@ -87,5 +88,11 @@ a {
   }
   .title {
     font-size: 60px;
+  }
+}
+@media (min-width: $desktop) {
+  .container {
+    width: $desktop;
+    padding: 0 40px;
   }
 }

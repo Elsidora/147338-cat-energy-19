@@ -11,6 +11,13 @@
   align-items: center;
   padding: 35px 0;
   border-bottom: 2px solid $grey;
+  cursor: pointer;
+}
+.footer-logo img:hover {
+  opacity: .8;
+}
+.footer-logo img:active {
+  opacity: .6;
 }
 .copyrights {
   display: flex;
@@ -28,10 +35,21 @@
   font-weight: 400;
   color: $black;
 }
+.copyrights__link:active {
+  color: rgba(0, 0, 0, .3)
+}
 .copyrights__link-logo {
   display: flex;
   justify-content: end;
   align-items: center;
+  width: 27px;
+  height: 34px;
+}
+.copyrights__link-logo path:hover {
+  fill: $lightgreen;
+}
+.copyrights__link-logo path:active {
+  fill: rgba(104, 183, 56, .3);
 }
 
 @media (min-width: $tablet) {
