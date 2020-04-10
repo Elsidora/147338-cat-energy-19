@@ -117,10 +117,15 @@
   .logo {
     padding-left: 0;
     width: 172px;
-    height: 108px;
+    height: 105px;
+    padding: 25px 0 24px;
     position: static;
     z-index: 0;
     margin-right: 0;
+  }
+  .logo img {
+    width: 172px;
+    height: 57px;
   }
   .main-nav {
     position: static;
@@ -143,7 +148,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    padding: 17px 0;
+    padding: 16px 0;
     cursor: pointer;
   }
   .main-nav__toggle {
@@ -169,6 +174,8 @@
   .main-nav__link {
     font-size: 20px;
     padding: 17px 0;
-    color: $white;
+    &--color {
+      color: $white;
+    }
   }
 }
