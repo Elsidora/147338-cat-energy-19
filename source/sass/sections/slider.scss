@@ -20,6 +20,10 @@
   text-align: center;
   text-transform: uppercase;
   padding: 10px;
+  border-bottom: 1px dashed;
+  &:active {
+    border-bottom: none;
+  }
 }
 .slider__labels {
   display: flex;
@@ -41,5 +45,14 @@
   }
   &--no-active {
     cursor: pointer;
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider__description {
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid;
+    }
   }
 }

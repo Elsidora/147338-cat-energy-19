@@ -83,6 +83,9 @@
   text-transform: uppercase;
   margin-top: auto;
   padding: 15px 0;
+  &:active {
+    opacity: .3;
+  }
 }
 @media (min-width: $tablet) {
   .program__list {

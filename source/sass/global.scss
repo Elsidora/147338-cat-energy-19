@@ -72,9 +72,9 @@ a {
   text-align: center;
   padding: 10px 0;
   cursor: pointer;
-}
-.line-grey {
-  border-bottom: 2px solid $grey;
+  &:active {
+    opacity: .3;
+  }
 }
 @media (min-width: $tablet) {
   .page {
@@ -95,5 +95,11 @@ a {
   .container {
     width: $desktop;
     padding: 0 40px;
+  }
+  .link-button {
+    &:hover,
+    &:focus {
+      background-color: $green;
+    }
   }
 }

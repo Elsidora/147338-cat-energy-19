@@ -12,15 +12,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid $lightgreen;
-  border-radius: 50%;
+
 }
 .social__link {
   padding: 22px;
   cursor: pointer;
+  &:active path {
+    fill: rgba(104, 183, 56, .3);
+  }
 }
 @media (min-width: $tablet) {
   .social {
     border-bottom: none;
+  }
+}
+@media (min-width: $desktop) {
+  .social__link {
+    &:hover path,
+    &:focus path {
+      fill: $lightgreen;
+    }
   }
 }
