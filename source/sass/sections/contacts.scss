@@ -3,16 +3,26 @@
 }
 
 .contacts__map {
+  position: relative;
   width: $mobile;
   margin: 0 auto;
   margin-top: -38px;
+}
+
+.map-api {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  height: 400px;
+  margin: 0 auto;
 }
 
 .contacts__inner {
   display: flex;
   justify-content: space-between;
   position: relative;
-  z-index: 5;
+  z-index: 20;
   background-color: $lightgrey;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -82,12 +92,13 @@
   }
 
   .contacts__map {
-    width: $desktop;
+    width: 100%;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   .contacts__map img {
-    width: 1440px;
+    width: 100vw;
     height: 400px;
   }
 

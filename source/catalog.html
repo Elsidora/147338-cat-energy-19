@@ -5,6 +5,17 @@
     <title>Каталог сайта интернет-магазина кошачьего питания</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a32c6723-9819-412d-9f3b-58cd47c1aaa9&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+        var myMap = new ymaps.Map("map", {
+          center: [ 59.938635, 30.323118 ],
+          zoom: 7
+        });
+      }
+    </script>
   </head>
   <body class="page page--catalog">
     <header class="page-header">
@@ -320,6 +331,7 @@
           </address>
         </div>
         <div class="contacts__map">
+          <div class="contacts__yandex-map map-api" id="map" style="width: 100vw; height: 400px"></div>
           <picture>
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
