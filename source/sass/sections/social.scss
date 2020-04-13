@@ -7,25 +7,29 @@
   border-bottom: 2px solid $grey;
   margin: 0 auto;
 }
+
 .social li {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
 .social__link {
   padding: 22px;
   cursor: pointer;
+
   &:active path {
-    fill: rgba(104, 183, 56, .3);
+    fill: rgba(104, 183, 56, 0.3);
   }
 }
+
 @media (min-width: $tablet) {
   .social {
     border-bottom: none;
   }
 }
+
 @media (min-width: $desktop) {
   .social__link {
     &:hover path,

@@ -1,9 +1,8 @@
 @import "normalize";
-
 @import "variables.scss";
 @import "fonts.scss";
 @import "global.scss";
-
+//sections
 @import "sections/header.scss";
 @import "sections/footer.scss";
 @import "sections/catalog.scss";
@@ -12,7 +11,6 @@
 @import "sections/extra.scss";
 @import "sections/features.scss";
 @import "sections/promo.scss";
-@import "sections/show-goods.scss";
 @import "sections/program.scss";
 @import "sections/slider.scss";
 @import "sections/social.scss";

@@ -13,12 +13,14 @@
   text-align: center;
   cursor: pointer;
 }
+
 .present__paragraph {
   margin-top: auto;
   font-size: 16px;
   line-height: 20px;
   color: $white;
 }
+
 @media (min-width: $tablet) {
   .present {
     height: 200px;
@@ -27,12 +29,13 @@
     text-align: left;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
+
   .present__paragraph {
     margin-left: auto;
     width: 170px;
-
   }
 }
+
 @media (min-width: $desktop) {
   .present {
     width: 245px;
@@ -42,8 +45,9 @@
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     margin-bottom: 0;
   }
+
   .present__paragraph {
     margin: 0;
-    margin-top: auto;;
+    margin-top: auto;
   }
 }

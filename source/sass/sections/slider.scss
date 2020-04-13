@@ -2,24 +2,28 @@
   margin: 0;
   padding: 0;
 }
+
 .slider__item {
   list-style: none;
   width: $mobile;
   margin: 0 auto;
   height: 240px;
 }
+
 .slider__controls {
   width: $mobile;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 .slider__buttons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .slider__description {
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -30,19 +34,24 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px dashed;
+
   &:active {
     border-bottom: none;
   }
+
   &--prev {
     margin-right: 15px;
   }
+
   &--next {
     margin-left: 15px;
   }
 }
+
 .slider-hidden {
   display: none;
 }
+
 .slider__range-line {
   position: relative;
   display: flex;
@@ -53,6 +62,7 @@
   border: 1px solid $grey;
   border-radius: 5px;
 }
+
 .slider__range-btn {
   position: absolute;
   content: "";
@@ -64,37 +74,42 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
 @media (min-width: $tablet) {
   .slider {
     margin-top: 150px;
   }
+
   .slider__item {
     width: 690px;
     height: 517px;
   }
+
   .slider__item img {
     width: 690px;
     height: 517px;
   }
+
   .slider__controls {
     width: $tablet;
     margin: 0 auto;
     padding: 0 30px;
   }
+
   .slider__range-line {
     width: 434px;
     background-color: $grey;
     height: 1px;
   }
+
   .slider__range-btn {
-    top: calc(50% - 25px);;
+    top: calc(50% - 25px);
     left: calc(50% - 25px);
     width: 50px;
     height: 50px;
     background-color: $lightgreen;
     box-shadow: 0 0 0 3px #e6e6e6;
     border: 17px solid $white;
-    //border: 20px solid $white;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -104,19 +119,21 @@
   .slider {
     margin-top: 0;
   }
+
   .slider__item {
     margin: 0;
   }
+
   .slider__controls {
     width: 610px;
     margin: 0 auto;
     padding: 0;
   }
+
   .slider__description {
     &:hover,
     &:focus {
       border-bottom: 1px solid;
     }
   }
-
 }

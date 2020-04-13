@@ -16,8 +16,9 @@ img {
 a {
   text-decoration: none;
 }
+
 .page {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -44,26 +45,27 @@ a {
 }
 
 .page-title {
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
+
 .title {
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
 }
+
 .link-button {
   //margin: 3px 0;
   display: block;
   width: 100%;
   background-color: $lightgreen;
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -72,31 +74,36 @@ a {
   text-align: center;
   padding: 10px 0;
   cursor: pointer;
-  &:active {
-    opacity: .3;
+
+  &:active:not(.catalog__offers) {
+    opacity: 0.3;
   }
 }
+
 @media (min-width: $tablet) {
   .page {
     font-size: 16px;
     line-height: 24px;
   }
+
   .container {
     width: $tablet;
     padding: 0 30px;
-
   }
+
   .title {
     font-size: 60px;
     margin: 30px 0;
   }
 }
+
 @media (min-width: $desktop) {
   .container {
     width: $desktop;
     padding: 0 40px;
   }
-  .link-button {
+
+  .link-button:not(.catalog__offers) {
     &:hover,
     &:focus {
       background-color: $green;
