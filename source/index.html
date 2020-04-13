@@ -65,34 +65,49 @@
         </div>
       </section>
       <section class="example">
-        <div class="example__inner container">
-          <h2 class="example__title title">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__wrap">
-            <ul class="example__list">
-              <li class="example__item"><span class="example__item-value">5 кг</span><span
-                  class="example__item-description">снижение веса</span></li>
-              <li class="example__item"><span class="example__item-value">60 дней</span><span
-                  class="example__item-description">затрачено времени</span></li>
-            </ul>
-            <p class="example__paragraph">Затраты на питание: 15000 руб.</p>
+        <div class="example__desktop-flex">
+          <div class="example__inner container">
+            <h2 class="example__title title">Живой пример</h2>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца просто заменив свой обычный корм на Cat Energy Slim.
+              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в
+              день.</p>
+            <div class="example__wrap">
+              <ul class="example__list">
+                <li class="example__item"><span class="example__item-value">5 кг</span><span
+                    class="example__item-description">снижение веса</span></li>
+                <li class="example__item"><span class="example__item-value">60 дней</span><span
+                    class="example__item-description">затрачено времени</span></li>
+              </ul>
+              <p class="example__paragraph"><span class="example__cost">Затраты на питание:</span><span> 15000 руб.</span></p>
+            </div>
           </div>
-        </div>
-        <div class="example__slider slider">
-          <ul class="slider__list">
-            <li class="slider__item slider__item--prev"></li>
-            <li class="slider__item slider__item--next visually-hidden"></li>
-          </ul>
-          <div class="slider__controls container">
-            <input class="visually-hidden" type="radio" id="prev" name="radio" value="prev" checked>
-            <input class="visually-hidden" type="radio" id="next" name="radio" value="next">
-            <div class="slider__buttons">
-              <button class="slider__description slider__description--prev">Было</button>
-              <div class="slider__labels">
-                <label class="slider__label slider__label--active" for="prev"></label>
-                <label class="slider__label slider__label--no-active" for="next"></label>
+          <div class="example__slider slider">
+            <ul class="slider__list">
+              <li class="slider__item slider__item--prev" id="prev">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                  <img src="img/before-mobile@1x.png" alt="Изображение толстого котейки" width="320" height="240">
+                </picture>
+              </li>
+              <li class="slider__item slider__item--next slider-hidden" id="next">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                  <img src="img/after-mobile@1x.png" alt="Изображение худенького котейки" width="320" height="240">
+                </picture>
+              </li>
+            </ul>
+            <div class="slider__controls">
+              <div class="slider__buttons">
+                <button class="slider__description slider__description--prev" name="prev" value="prev">Было</button>
+                <div class="slider__range-filter">
+                  <div class="slider__range-line">
+                    <button class="slider__range-btn" type="button"><span class="visually-hidden">ползунок</span></button>
+                  </div>
+                </div>
+                <button class="slider__description slider__description--next" name="next" value="next">Стало</button>
               </div>
-              <button class="slider__description slider__description--next">Стало</button>
             </div>
           </div>
         </div>
@@ -184,5 +199,6 @@
       </div>
     </footer>
     <script src="js/nav.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

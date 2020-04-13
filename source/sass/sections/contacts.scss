@@ -71,9 +71,10 @@
   }
   .contacts__map {
     width: $desktop;
+    margin: 0 auto;
   }
   .contacts__map img  {
-    width: $desktop;
+    width: 1440px;
     height: 400px;
   }
   .contacts__inner {

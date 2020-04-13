@@ -34,7 +34,7 @@
   width: 84px;
   padding: 0 5px;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   text-align: center;
   margin-top: -10px;
   background-color: $lightgrey;
@@ -48,6 +48,7 @@
 @media (min-width: $tablet) {
   .example {
     min-height: 1082px;
+    padding-bottom: 0;
     background-image: linear-gradient($white 620px, $lightgrey 620px, $lightgrey 1082px);
   }
   .example__inner {
@@ -82,8 +83,43 @@
     font-size: 20px;
     line-height: 32px;
     text-align: right;
-    width: 175px;
+    width: 222px;
     margin: 0;
+  }
+
+}
+@media (min-width: $desktop) {
+  .example {
+    min-height: 660px;
+    background-image: linear-gradient($white 200px, $lightgrey 200px, $lightgrey 660px);
+  }
+  .example__desktop-flex {
+    display: flex;
+    justify-content: space-between;
+    width: $desktop;
+    padding: 33px 40px;
+    margin: 0 auto;
+  }
+  .example__title {
+    margin-bottom: 150px;
+  }
+  .example__description {
+    width: 445px;
+  }
+  .example__wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .example__item-description {
+    background-color: $lightgrey;
+    margin-bottom: 40px;
+  }
+  .example__paragraph {
+    width: auto;
+    text-align: left;
+  }
+  .example__cost {
+    margin-right: 65px;
   }
 
 }
