@@ -1,18 +1,14 @@
 .features {
-  //outline: 2px solid green;
+  padding: 15px 0;
 }
-.features__inner {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  outline: 2px solid green;
-}
+
 .features__list {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  //padding-bottom: 30px;
 }
+
 .features__item {
   display: flex;
   align-items: center;
@@ -21,6 +17,7 @@
   margin: 10px 0;
   padding: 3px 0;
   padding-left: 82px;
+
   &::before {
     content: "";
     position: absolute;
@@ -29,24 +26,85 @@
     width: 60px;
     height: 60px;
     background-color: $lightgreen;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &--leaf {
+    &::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../img/advantage-powder@1x.png");
+    }
+  }
+
+  &--dining {
+    &::before {
+      background-image: url("../img/advantage-dining@1x.png");
+    }
+  }
+
+  &--clock {
+    &::before {
+      background-image: url("../img/advantage-clock@1x.png");
+    }
   }
 }
+
 .features__paragraph {
   margin: 0;
 }
+
 @media (min-width: $tablet) {
   .features {
+    padding: 9px 0;
     border-bottom: 2px solid grey;
   }
+
   .features__list {
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
+
   .features__item {
     padding: 0;
     padding-left: 0;
-    width: 260px;
+    width: calc(50% - 90px);
     padding-top: 120px;
-    margin-right: 60px;
+    padding-bottom: 46px;
+    margin: 45px 0;
+
+    &::after {
+      position: absolute;
+      content: attr(data-count);
+      top: 0;
+      left: 44%;
+      height: 100%;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 282px;
+      line-height: 205px;
+      color: $lightgrey;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .features__paragraph {
+    position: relative;
+    z-index: 5;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__item {
+    width: calc(25% - 40px);
   }
 }

@@ -1,9 +1,9 @@
 .promo {
-  //background: $lightgreen;
-  background-image: url('../img/index-background-mobile@1x.jpg'), linear-gradient($lightgreen 305px, $white 305px, $white 484px);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($lightgreen 305px, $white 305px, $white 484px);
   background-position: top 0 left calc(100% / 2), top 0 left 0;
   background-repeat: no-repeat;
 }
+
 .promo__inner {
   display: flex;
   flex-direction: column;
@@ -11,20 +11,23 @@
   text-align: center;
   padding-top: 40px;
   color: $white;
-  background-image: url('../img/index-can-mobile@1x.png');
+  background-image: url("../img/index-can-mobile@1x.png");
   background-position: bottom 46px left calc(100% / 2);
   background-repeat: no-repeat;
 }
+
 .promo__title {
   line-height: 36px;
   margin: 0;
 }
+
 .promo__paragraph {
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 }
+
 .promo__link-button {
   margin-top: auto;
   font-size: 14px;
@@ -37,25 +40,29 @@
     background-image: none;
     background-color: $white;
   }
+
   .promo__inner {
-    background-image: url('../img/index-can-tablet@1x.jpg');
+    background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: bottom 0 left center;
     background-repeat: no-repeat;
     min-height: 852px;
+    padding-top: 0;
     padding-left: 119px;
     padding-right: 75px;
     text-align: left;
     color: $black;
   }
+
   .promo__title {
     line-height: 60px;
-    margin-bottom: 30px;
   }
+
   .promo__paragraph {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 40px;
+    margin: 40px 0;
   }
+
   .promo__link-button {
     margin: 0;
     margin-top: 0;
@@ -65,22 +72,21 @@
     width: 245px;
   }
 }
+
 @media (min-width: $desktop) {
   .promo {
     margin-top: -150px;
     height: 696px;
-    background-image: url('../img/index-can-desktop@1x.png'), url('../img/index-background-desktop@1x.jpg'), linear-gradient(to right, $white 50vw, $lightgreen 50vw);
-    background-position: bottom 60px left calc(50vw - 160px), top 0 left 50vw ;
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, $white 50vw, $lightgreen 50vw);
+    background-position: bottom 60px left calc(50vw - 160px), top 0 left 50vw;
   }
+
   .promo__inner {
     background: none;
     padding: 200px 120px;
   }
-  .promo__paragraph {
-    margin-bottom: 60px;
-  }
+
   .promo__title {
     width: 418px;
   }
 }
-

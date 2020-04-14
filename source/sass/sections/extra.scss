@@ -1,29 +1,142 @@
+.extra {
+  border-top: 3px solid $lightgreen;
+}
+
 .extra__list {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   padding: 0;
 }
+
 .extra__item {
   list-style: none;
   padding-bottom: 20px;
   border-top: 2px solid $grey;
 }
 
-.extra__title {
-  font-size:  24px;
-  line-height: 24px;
+.extra__item:last-child {
+  border-bottom: 2px solid $grey;
 }
+
+.extra__title {
+  transform: translate(20px, -17px);
+  font-size: 24px;
+  line-height: 1;
+  background-color: $white;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  margin: 0;
+  margin-left: -40px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
 .extra__item-title {
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
   color: $black;
 }
+
 .extra__item-description {
   display: flex;
   justify-content: space-between;
   line-height: 14px;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet) {
+  .extra__title {
+    font-size: 36px;
+    line-height: 1;
+    transform: translate(0, -28px);
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0 38px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .extra__list {
+    padding: 0;
+    border: 2px solid $grey;
+    border-top: none;
+    margin-bottom: 70px;
+  }
+
+  .extra__item {
+    padding: 28px 38px;
+  }
+
+  .extra__item-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  .extra__item-title {
+    margin: 0;
+  }
+
+  .extra__item-description {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .extra {
+    margin-bottom: 85px;
+  }
+
+  .extra__list {
+    border: none;
+    padding: 0 38px;
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
+  .extra__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  .extra__item:last-child {
+    border-bottom: 1px solid $grey;
+  }
+
+  .extra__item-title {
+    font-size: 20px;
+  }
+
+  .extra__item-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 42px;
+  }
+
+  .extra__item-inner {
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 40px;
+    flex-grow: 1;
+  }
+
+  .extra__item-description {
+    width: 285px;
+  }
+
+  .extra__span-description {
+    min-width: 50px;
+  }
+
+  .extra__link {
+    width: 245px;
+    font-size: 20px;
+  }
 }

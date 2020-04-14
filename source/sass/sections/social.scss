@@ -1,26 +1,40 @@
 .social {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid $grey;
   padding: 0;
-  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $grey;
+  margin: 0 auto;
 }
+
 .social li {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  border: 1px solid $lightgreen;
-  border-radius: 50%;
-}
 .social__link {
-  padding: 20px;
+  padding: 22px;
   cursor: pointer;
+
+  &:active path {
+    fill: rgba(104, 183, 56, 0.3);
+  }
 }
+
 @media (min-width: $tablet) {
   .social {
     border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .social__link {
+    &:hover path,
+    &:focus path {
+      fill: $lightgreen;
+    }
   }
 }
