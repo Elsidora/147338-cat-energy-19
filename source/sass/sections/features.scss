@@ -79,10 +79,27 @@
     padding-bottom: 46px;
     margin: 45px 0;
 
+    &::after {
+      position: absolute;
+      content: attr(data-count);
+      top: 0;
+      left: 44%;
+      height: 100%;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 282px;
+      line-height: 205px;
+      color: $lightgrey;
+    }
+
     &::before {
       width: 80px;
       height: 80px;
     }
+  }
+
+  .features__paragraph {
+    position: relative;
+    z-index: 5;
   }
 }
 
