@@ -69,6 +69,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    counter-reset: section;
   }
 
   .features__item {
@@ -80,8 +81,9 @@
     margin: 45px 0;
 
     &::after {
+      counter-increment: section;
+      content: counter(section);
       position: absolute;
-      content: attr(data-count);
       top: 0;
       left: 44%;
       height: 100%;
