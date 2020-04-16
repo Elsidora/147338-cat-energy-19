@@ -156,8 +156,7 @@
   .main-nav__list {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 25px 0;
+    padding: 26px 0;
     width: 438px;
   }
 
@@ -184,9 +183,11 @@
 
 @media (min-width: $desktop) {
   .page-header__inner {
+    position: relative;
     width: $desktop;
     padding: 0 40px;
     min-height: 150px;
+    z-index: 10;
   }
 
   .logo {
@@ -202,7 +203,7 @@
 
   .main-nav__list {
     width: 480px;
-    padding: 46px 0;
+    padding: 44px 0;
   }
 
   .main-nav__link {
