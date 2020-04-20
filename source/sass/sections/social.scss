@@ -18,11 +18,6 @@
 .social__link {
   padding: 22px;
   cursor: pointer;
-  outline: 1px solid red;
-
-  /*&:active path {
-    fill: rgba(104, 183, 56, 0.3);
-  }*/
 
    &:active svg{
     fill: rgba(104, 183, 56, 0.3);

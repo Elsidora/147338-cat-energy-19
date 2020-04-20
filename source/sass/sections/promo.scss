@@ -15,12 +15,12 @@
   flex-direction: column;
   min-height: 484px;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
   color: $white;
   background-image: url("../img/index-can-mobile@1x.png");
-  background-position: bottom 46px center;
+  background-position: bottom 45px center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 280px 270px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-can-mobile@2x.png");
