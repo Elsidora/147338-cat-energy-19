@@ -73,9 +73,21 @@
 }
 
 .catalog__offers {
+  position: relative;
   padding-top: 80px;
   background-color: $white;
   color: $black;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-plus-mobile.svg");
+    opacity: 0.2;
+  }
 }
 
 .catalog__paragraph {
@@ -184,6 +196,14 @@
     padding-top: 195px;
     margin: 0;
     margin-bottom: 15px;
+
+    &::before {
+      top: 55px;
+      left: calc(50% - 30px);
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-plus.svg");
+    }
   }
 
   .catalog__paragraph {

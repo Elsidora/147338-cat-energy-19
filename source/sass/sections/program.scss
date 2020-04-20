@@ -81,6 +81,7 @@
 }
 
 .program__link {
+  position: relative;
   display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -91,8 +92,28 @@
   margin-top: auto;
   padding: 15px 0;
 
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 94px;
+    width: 25px;
+    height: 46px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+  }
+
   &:active {
     opacity: 0.3;
+
+    &::after {
+      width: 37px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-size: 37px;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -159,6 +180,10 @@
   .program__link {
     font-size: 20px;
     line-height: 20px;
+    &::after {
+      left: 132px;
+      height: 50px;
+    }
   }
 }
 
@@ -218,6 +243,19 @@
         height: 63px;
         background-image: url("../img/icon-cat-pro.svg");
         background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .program__link {
+    &::after {
+      left: 125px;
+    }
+    &:hover {
+      &::after {
+        width: 37px;
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+        background-size: 37px;
       }
     }
   }

@@ -18,8 +18,13 @@
 .social__link {
   padding: 22px;
   cursor: pointer;
+  outline: 1px solid red;
 
-  &:active path {
+  /*&:active path {
+    fill: rgba(104, 183, 56, 0.3);
+  }*/
+
+   &:active svg{
     fill: rgba(104, 183, 56, 0.3);
   }
 }
@@ -32,8 +37,8 @@
 
 @media (min-width: $desktop) {
   .social__link {
-    &:hover path,
-    &:focus path {
+    &:hover svg,
+    &:focus svg {
       fill: $lightgreen;
     }
   }

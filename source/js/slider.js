@@ -6,13 +6,14 @@ const onSliderButtonsClick = (evt) => {
   evt.preventDefault();
   const {target} = evt;
   sliderItems.forEach( (sliderItem) => {
-    sliderItem.classList.add('slider-hidden');
-    target.blur();
-    if (sliderItem.id === target.value) {
-      sliderItem.classList.remove('slider-hidden');
+    if (target.classList.contains("slider__description")) {
+      sliderItem.classList.add('slider-hidden');
+      target.blur();
+      if (sliderItem.id === target.value) {
+        sliderItem.classList.remove('slider-hidden');
 
-    }
-
+      }
+    };
   });
 };
 
