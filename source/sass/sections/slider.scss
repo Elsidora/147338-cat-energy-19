@@ -14,6 +14,7 @@
   width: $mobile;
   margin: 0 auto;
   padding: 0 20px;
+  padding-bottom: 20px;
 }
 
 .slider__buttons {
@@ -29,11 +30,12 @@
   text-align: center;
   text-transform: uppercase;
   padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: transparent;
   border: none;
   border-bottom: 1px dashed;
+  transition: 0.5s;
 
   &:active {
     border-bottom: none;
@@ -52,8 +54,11 @@
   display: none;
 }
 
-.slider__range-line {
+.slider__range-filter {
   position: relative;
+}
+
+.slider__range-line {
   display: flex;
   width: 84px;
   background-color: $white;
@@ -66,18 +71,19 @@
 .slider__range-btn {
   position: absolute;
   content: "";
-  top: 2px;
+  top: 4px;
   left: 3px;
   width: 35px;
   height: 6px;
   background-color: $lightgreen;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 @media (min-width: $tablet) {
   .slider {
-    margin-top: 150px;
+    margin-top: 80px;
   }
 
   .slider__item {
@@ -91,28 +97,42 @@
     padding: 0 30px;
   }
 
+  .slider__range-filter {
+    position: relative;
+  }
+
   .slider__range-line {
     width: 434px;
     background-color: $grey;
-    height: 1px;
+    height: 6px;
+    padding: 0;
   }
 
   .slider__range-btn {
-    top: calc(50% - 25px);
-    left: calc(50% - 25px);
-    width: 50px;
-    height: 50px;
+    top: calc(50% - 18px);
+    left: calc(50% - 18px);
+    width: 36px;
+    height: 36px;
     background-color: $lightgreen;
     box-shadow: 0 0 0 3px #e6e6e6;
-    border: 17px solid $white;
+    border: 12px solid $white;
     border-radius: 50%;
+    transition: 0.5s;
     cursor: pointer;
+
+    &:active {
+      box-shadow: 0 0 0 5px $lightgreen;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .slider {
     margin-top: 0;
+  }
+
+  .slider__list {
+    margin-bottom: 15px;
   }
 
   .slider__item {
@@ -126,9 +146,16 @@
   }
 
   .slider__description {
+    cursor: pointer;
+
     &:hover,
     &:focus {
       border-bottom: 1px solid;
     }
+  }
+
+  .slider__range-btn:hover,
+  .slider__range-btn:focus {
+    box-shadow: 0 0 0 5px #e6e6e6;
   }
 }

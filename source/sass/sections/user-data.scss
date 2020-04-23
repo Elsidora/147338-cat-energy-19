@@ -92,12 +92,18 @@
 
 .form__email-icon {
   position: absolute;
-  top: 25px;
+  top: 24px;
   right: 15px;
   width: 17px;
   height: 13px;
-  fill: $black;
-  outline: 1px solid red;
+}
+
+.form__phone-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 12px;
 }
 
 .form__input {
@@ -112,17 +118,26 @@
   margin: 8px 0;
   outline: none;
   border: 1px solid rgba(230, 230, 230, 0.5);
+  transition: 0.5s;
 
   &:active {
     border: 1px solid $black;
   }
 
   &--contact {
-    &:active .form__email-icon {
+    &:active .form__email-icon,
+    &:active .form__phone-icon {
       fill: $lightgreen;
     }
   }
 }
+
+.form__icon {
+  &--error svg {
+    fill: red;
+  }
+}
+
 .form__label-button {
   position: relative;
   flex-grow: 1;
@@ -134,7 +149,6 @@
   }
 
   &--radio {
-
     &::before {
       position: absolute;
       content: "";
@@ -152,6 +166,7 @@
       }
     }
   }
+
   &--add {
     &::before {
       position: absolute;
@@ -162,6 +177,7 @@
       height: 30px;
       border: 1px solid $grey;
     }
+
     &:active {
       &::before {
         opacity: 0.3;
@@ -275,6 +291,16 @@ input[type="checkbox"]:checked + .form__label-button {
     margin: 10px 0;
   }
 
+  .form__email-icon {
+    top: 32px;
+    right: 21px;
+  }
+
+  .form__phone-icon {
+    top: 29px;
+    right: 18px;
+  }
+
   .form__list {
     &--wrap {
       border: 1px solid $grey;
@@ -298,7 +324,6 @@ input[type="checkbox"]:checked + .form__label-button {
     padding-left: 90px;
 
     &--radio {
-
       &::before {
         top: 12px;
         left: 29px;
@@ -455,6 +480,7 @@ input[type="checkbox"]:checked + .form__label-button {
       width: 245px;
       padding: 0;
       padding-left: 58px;
+
       &::before {
         top: -10px;
       }

@@ -62,7 +62,6 @@ a {
 }
 
 .link-button {
-  //margin: 3px 0;
   display: block;
   width: 100%;
   background-color: $lightgreen;
@@ -75,6 +74,8 @@ a {
   text-align: center;
   padding: 10px 0;
   cursor: pointer;
+  border: none;
+  transition: 0.5s;
 
   &:active:not(.catalog__offers) {
     opacity: 0.3;

@@ -1,5 +1,5 @@
 .program {
-  margin: 15px 0;
+  margin: 0;
 }
 
 .program__list {
@@ -103,6 +103,7 @@
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
+    transition: 0.35s;
   }
 
   &:active {
@@ -180,6 +181,7 @@
   .program__link {
     font-size: 20px;
     line-height: 20px;
+
     &::after {
       left: 132px;
       height: 50px;
@@ -251,6 +253,7 @@
     &::after {
       left: 125px;
     }
+
     &:hover {
       &::after {
         width: 37px;

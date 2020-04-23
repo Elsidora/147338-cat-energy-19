@@ -8,6 +8,7 @@
   }
   background-position: top center;
   background-repeat: no-repeat;
+  margin-bottom: 15px;
 }
 
 .promo__inner {
@@ -56,8 +57,9 @@
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
+    background-size: 709px 609px;
     min-height: 852px;
-    padding-top: 0;
+    padding-top: 50px;
     padding-left: 119px;
     padding-right: 75px;
     text-align: left;
@@ -75,7 +77,8 @@
   .promo__paragraph {
     font-size: 20px;
     line-height: 20px;
-    margin: 40px 0;
+    margin: 30px 0;
+    margin-bottom: 40px;
   }
 
   .promo__link-button {
@@ -109,7 +112,6 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
-
       }
     }
 

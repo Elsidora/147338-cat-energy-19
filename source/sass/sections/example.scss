@@ -7,6 +7,10 @@
   padding-bottom: 15px;
 }
 
+.example__title {
+  margin: 0;
+}
+
 .example__description {
   padding-right: 10px;
 }
@@ -63,6 +67,10 @@
   .example__inner {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .example__title {
+    margin: 40px 0;
   }
 
   .example__description {

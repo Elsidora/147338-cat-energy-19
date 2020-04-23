@@ -16,12 +16,12 @@
   justify-content: center;
   position: relative;
   width: 211px;
-  height: 66px;
   padding: 14px 0;
   padding-left: 20px;
   z-index: 2;
   margin: 0;
   margin-right: -211px;
+  transition: 0.5s;
 
   &:active {
     opacity: 0.6;
@@ -96,8 +96,9 @@
   color: $black;
   text-transform: uppercase;
   padding: 23px 0;
+  transition: 0.5s;
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
   }
 }
@@ -108,7 +109,6 @@
   right: 0;
   z-index: 2;
   display: flex;
-  align-items: center;
   width: 70px;
   height: 65px;
   background-color: transparent;
@@ -135,16 +135,10 @@
 
   .logo {
     width: 172px;
-    height: 105px;
-    padding: 25px 0 24px;
+    padding: 24px 0 24px;
     position: static;
     z-index: 0;
     margin-right: 0;
-  }
-
-  .logo img {
-    width: 172px;
-    height: 57px;
   }
 
   .main-nav {
@@ -192,7 +186,7 @@
 
   .logo {
     width: 202px;
-    height: 150px;
+    padding: 45px 0;
     cursor: pointer;
 
     &:hover,
@@ -219,8 +213,8 @@
       border-bottom: 1px solid $white;
     }
 
-    &:hover,
-    &:focus {
+    &[href]:hover,
+    &[href]:focus {
       opacity: 0.6;
     }
   }
