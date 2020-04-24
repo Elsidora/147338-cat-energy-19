@@ -105,8 +105,15 @@
     position: absolute;
     z-index: 100;
     width: 570px;
-    padding: 64px 76px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 76px;
+    padding-right: 76px;
     top: 95px;
     left: calc(1300px / 2 - 570px);
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 }

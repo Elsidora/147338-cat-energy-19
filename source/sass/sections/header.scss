@@ -131,6 +131,7 @@
     padding: 0 30px;
     min-height: 108px;
     position: static;
+    height: 0;
   }
 
   .logo {
@@ -145,9 +146,14 @@
     position: static;
     flex-grow: 0;
     margin: 0;
+
+    &--nojs .main-nav__list {
+      display: flex;
+    }
   }
 
   .main-nav__list {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 26px 0;

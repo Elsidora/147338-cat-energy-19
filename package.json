@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "normalize.scss": "^0.1.0",
-    "npx": "^10.2.0"
+    "npx": "^10.2.0",
+    "picturefill": "^3.0.3"
   }
 }
