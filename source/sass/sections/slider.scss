@@ -17,6 +17,19 @@
   height: 100%;
   overflow: hidden;
   z-index: 10;
+
+  &--prev {
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      bottom: 0;
+      left: 0;
+      height: 240px;
+      width: 100%;
+      background-color: $lightgrey;
+    }
+  }
 }
 
 .slider__item img {
@@ -69,11 +82,9 @@
   }
 }
 
-/*
-.slider-hidden {
+.slider-none {
   display: none;
 }
-*/
 
 .slider__range-filter {
   position: relative;
@@ -100,7 +111,10 @@
   background-color: $lightgreen;
   border: none;
   border-radius: 5px;
-  cursor: ew-resize;
+
+  &--click {
+    left: 42px;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -117,14 +131,7 @@
   .slider__item {
     &--prev {
       &::before {
-        position: absolute;
-        content: "";
-        z-index: -1;
-        bottom: 0;
-        left: 0;
         height: 347px;
-        width: 100%;
-        background-color: $lightgrey;
       }
 
       &::after {

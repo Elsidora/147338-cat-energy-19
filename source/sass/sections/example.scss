@@ -60,13 +60,9 @@
 @media (min-width: $tablet) {
   .example {
     min-height: 1085px;
-    padding-bottom: 0;
-    background-color: $white;
-  }
-
-  .example__desktop-flex {
-    position: relative;
     padding-bottom: 60px;
+    position: relative;
+    background-color: $white;
 
     &::before {
       position: absolute;
@@ -139,27 +135,25 @@
 @media (min-width: $desktop) {
   .example {
     min-height: 660px;
-    //background-image: linear-gradient($white 200px, $lightgrey 200px, $lightgrey 660px);
+    padding-bottom: 65px;
+
+    &::before {
+      width: calc(100vw - ((100vw - 1300px) / 2 + (690px / 2)));
+      height: 462px;
+      z-index: 3;
+    }
+
+    &::after {
+      width: calc((100vw - 1300px) / 2 + (690px / 2));
+      height: 462px;
+    }
   }
 
   .example__desktop-flex {
     display: flex;
     justify-content: space-between;
     width: $desktop;
-    padding: 65px 40px;
-    padding-top: 0;
     margin: 0 auto;
-
-    &::before {
-      width: 70vw;
-      height: 462px;
-      z-index: 3;
-    }
-
-    &::after {
-      width: 30vw;
-      height: 462px;
-    }
   }
 
   .example__inner {
