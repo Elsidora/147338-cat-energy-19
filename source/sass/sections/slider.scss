@@ -1,16 +1,35 @@
 .slider__list {
-  margin: 0;
+  position: relative;
+  width: $mobile;
+  height: 240px;
+  margin: 0 auto;
   padding: 0;
+  z-index: 10;
 }
 
 .slider__item {
   list-style: none;
-  width: $mobile;
   margin: 0 auto;
-  height: 240px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.slider__item img {
+  display: block;
+  width: $mobile;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
 }
 
 .slider__controls {
+  position: relative;
+  z-index: 10;
   width: $mobile;
   margin: 0 auto;
   padding: 0 20px;
@@ -50,12 +69,15 @@
   }
 }
 
+/*
 .slider-hidden {
   display: none;
 }
+*/
 
 .slider__range-filter {
   position: relative;
+  z-index: 10;
 }
 
 .slider__range-line {
@@ -78,7 +100,7 @@
   background-color: $lightgreen;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: ew-resize;
 }
 
 @media (min-width: $tablet) {
@@ -86,9 +108,40 @@
     margin-top: 80px;
   }
 
-  .slider__item {
+  .slider__list {
     width: 690px;
     height: 517px;
+    margin-bottom: 27px;
+  }
+
+  .slider__item {
+    &--prev {
+      &::before {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        height: 347px;
+        width: 100%;
+        background-color: $lightgrey;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        top: 0;
+        left: 0;
+        height: calc(100% - 347px);
+        width: 100%;
+        background-color: $white;
+      }
+    }
+  }
+
+  .slider__item img {
+    width: 690px;
   }
 
   .slider__controls {
@@ -99,10 +152,11 @@
 
   .slider__range-filter {
     position: relative;
+    width: 428px;
   }
 
   .slider__range-line {
-    width: 434px;
+    width: 100%;
     background-color: $grey;
     height: 6px;
     padding: 0;
@@ -118,7 +172,7 @@
     border: 12px solid $white;
     border-radius: 50%;
     transition: 0.5s;
-    cursor: pointer;
+    cursor: ew-resize;
 
     &:active {
       box-shadow: 0 0 0 5px $lightgreen;
@@ -132,11 +186,21 @@
   }
 
   .slider__list {
-    margin-bottom: 15px;
+    margin-bottom: 45px;
   }
 
   .slider__item {
     margin: 0;
+
+    &--prev {
+      &::before {
+        height: 319px;
+      }
+
+      &::after {
+        height: calc(100% - 319px);
+      }
+    }
   }
 
   .slider__controls {

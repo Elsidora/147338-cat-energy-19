@@ -59,9 +59,34 @@
 
 @media (min-width: $tablet) {
   .example {
-    min-height: 1082px;
+    min-height: 1085px;
     padding-bottom: 0;
-    background-image: linear-gradient($white 620px, $lightgrey 620px, $lightgrey 1082px);
+    background-color: $white;
+  }
+
+  .example__desktop-flex {
+    position: relative;
+    padding-bottom: 60px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 50vw;
+      height: 465px;
+      background-color: $lightgrey;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      right: 0;
+      width: 50vw;
+      height: 465px;
+      background-color: $examplegrey;
+    }
   }
 
   .example__inner {
@@ -70,7 +95,7 @@
   }
 
   .example__title {
-    margin: 40px 0;
+    padding: 40px 0;
   }
 
   .example__description {
@@ -114,27 +139,46 @@
 @media (min-width: $desktop) {
   .example {
     min-height: 660px;
-    background-image: linear-gradient($white 200px, $lightgrey 200px, $lightgrey 660px);
+    //background-image: linear-gradient($white 200px, $lightgrey 200px, $lightgrey 660px);
   }
 
   .example__desktop-flex {
     display: flex;
     justify-content: space-between;
     width: $desktop;
-    padding: 33px 40px;
+    padding: 65px 40px;
+    padding-top: 0;
     margin: 0 auto;
+
+    &::before {
+      width: 70vw;
+      height: 462px;
+      z-index: 3;
+    }
+
+    &::after {
+      width: 30vw;
+      height: 462px;
+    }
+  }
+
+  .example__inner {
+    position: relative;
+    z-index: 10;
   }
 
   .example__title {
-    margin-bottom: 150px;
+    margin-bottom: 70px;
+    padding: 70px 0;
   }
 
   .example__list {
-    margin-bottom: 40px;
+    margin-bottom: 44px;
   }
 
   .example__description {
     width: 445px;
+    margin-bottom: 60px;
   }
 
   .example__wrap {

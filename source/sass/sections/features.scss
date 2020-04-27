@@ -130,6 +130,10 @@
 }
 
 @media (min-width: $desktop) {
+  .features {
+    border-bottom: none;
+  }
+
   .features__item {
     width: calc(25% - 40px);
   }
