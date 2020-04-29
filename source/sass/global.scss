@@ -88,6 +88,11 @@ a {
     line-height: 24px;
   }
 
+  .page-title {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+
   .container {
     width: $tablet;
     padding: 0 30px;
@@ -100,6 +105,12 @@ a {
 }
 
 @media (min-width: $desktop) {
+  .page-title {
+    margin-top: 20px;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
   .container {
     width: $desktop;
     padding: 0 40px;

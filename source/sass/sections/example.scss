@@ -1,24 +1,29 @@
 .example {
   background-color: $lightgrey;
+  padding-bottom: 5px;
 }
 
 .example__inner {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 5px;
 }
 
 .example__title {
   margin: 0;
+  margin-bottom: 23px;
 }
 
 .example__description {
   padding-right: 10px;
+  margin-bottom: 25px;
 }
 
 .example__list {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -33,8 +38,9 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  text-transform: uppercase;
   width: 124px;
-  padding: 17px 0;
+  padding: 14px 0;
   text-align: center;
   border: 2px solid $grey;
   border-radius: 2px;
@@ -70,7 +76,7 @@
       bottom: 0;
       left: 0;
       width: 50vw;
-      height: 465px;
+      height: 475px;
       background-color: $lightgrey;
     }
 
@@ -80,14 +86,15 @@
       bottom: 0;
       right: 0;
       width: 50vw;
-      height: 465px;
+      height: 475px;
       background-color: $examplegrey;
     }
   }
 
   .example__inner {
-    padding-top: 0;
+    padding-top: 4px;
     padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .example__title {
@@ -95,17 +102,18 @@
   }
 
   .example__description {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .example__wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    //align-items: center;
   }
 
   .example__list {
     width: 365px;
+    margin-bottom: 0;
   }
 
   .example__item-value {
@@ -125,17 +133,18 @@
 
   .example__paragraph {
     font-size: 20px;
-    line-height: 32px;
+    line-height: 30px;
     text-align: right;
     width: 222px;
     margin: 0;
+    padding-top: 5px;
   }
 }
 
 @media (min-width: $desktop) {
   .example {
-    min-height: 660px;
-    padding-bottom: 65px;
+    min-height: 635px;
+    padding-bottom: 0;
 
     &::before {
       width: calc(100vw - ((100vw - 1300px) / 2 + (690px / 2)));
@@ -151,7 +160,7 @@
 
   .example__desktop-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: $desktop;
     margin: 0 auto;
   }
@@ -162,22 +171,26 @@
   }
 
   .example__title {
-    margin-bottom: 70px;
-    padding: 70px 0;
+    margin-bottom: 110px;
+    padding: 34px 0;
   }
 
   .example__list {
-    margin-bottom: 44px;
+    margin-bottom: 37px;
   }
 
   .example__description {
     width: 445px;
-    margin-bottom: 60px;
+    margin-bottom: 67px;
   }
 
   .example__wrap {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .example__item-value {
+    padding-bottom: 17px;
   }
 
   .example__item-description {

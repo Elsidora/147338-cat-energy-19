@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" as="font" href="fonts/oswaldregular.woff2">
     <link rel="preload" as="font" href="fonts/oswaldmedium.woff2">
+
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "preview/cat-energy-catalog-mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "preview/cat-energy-catalog-tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1300px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "preview/cat-energy-catalog-desktop.png" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
   </head>
   <body class="page page--catalog">
     <div style="display:none">
@@ -333,8 +358,8 @@
                 <div class="extra__item-inner">
                   <h3 class="extra__item-title item-title">Сахарозаменитель</h3>
                   <dl class="extra__item-description">
-                    <dt class="extra__span-description">1 упаковка (100 г)</dt>
-                    <dd class="extra__span-description">200 Р.</dd>
+                    <dt class="extra__term-description">1 упаковка (100 г)</dt>
+                    <dd class="extra__value-description">200 Р.</dd>
                   </dl>
                 </div>
                 <a href="#" class="extra__link link-button">Заказать</a>
@@ -343,8 +368,8 @@
                 <div class="extra__item-inner">
                   <h3 class="extra__item-title item-title">Питьевая вода</h3>
                   <dl class="extra__item-description">
-                    <dt class="extra__span-description">5 литров</dt>
-                    <dd class="extra__span-description">50 Р.</dd>
+                    <dt class="extra__term-description">5 литров</dt>
+                    <dd class="extra__value-description">50 Р.</dd>
                   </dl>
                 </div>
                 <a href="#" class="extra__link link-button">Заказать</a>
@@ -353,8 +378,8 @@
                 <div class="extra__item-inner">
                   <h3 class="extra__item-title item-title">Молоко</h3>
                   <dl class="extra__item-description">
-                    <dt class="extra__span-description">1 литр</dt>
-                    <dd class="extra__span-description">100 Р.</dd>
+                    <dt class="extra__term-description">1 литр</dt>
+                    <dd class="extra__value-description">100 Р.</dd>
                   </dl>
                 </div>
                 <a href="#" class="extra__link link-button">Заказать</a>
@@ -363,8 +388,8 @@
                 <div class="extra__item-inner">
                   <h3 class="extra__item-title item-title">Витамины</h3>
                   <dl class="extra__item-description">
-                    <dt class="extra__span-description">1 упаковка (30 г)</dt>
-                    <dd class="extra__span-description">300 Р.</dd>
+                    <dt class="extra__term-description">1 упаковка (30 г)</dt>
+                    <dd class="extra__value-description">300 Р.</dd>
                   </dl>
                 </div>
                 <a href="#" class="extra__link link-button">Заказать</a>
@@ -380,7 +405,7 @@
       <section class="contacts">
         <div class="contacts__inner container">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__paragraph">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__paragraph">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="contacts__address">
             <span class="contacts__avenu">ул. Большая Конюшенная, д. 19/8</span>
             <span class="contacts__city">Санкт-Петербург</span>

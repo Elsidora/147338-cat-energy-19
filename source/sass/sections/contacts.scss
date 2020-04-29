@@ -36,8 +36,8 @@
   position: relative;
   z-index: 20;
   background-color: $lightgrey;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 
   &--index {
     background-color: $white;
@@ -68,7 +68,7 @@
 
   .contacts__inner {
     padding-top: 63px;
-    padding-bottom: 63px;
+    padding-bottom: 58px;
     padding-left: 71px;
     padding-right: 71px;
   }
@@ -88,7 +88,7 @@
   .contacts__avenu {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
 }
 
@@ -108,9 +108,9 @@
     padding-top: 64px;
     padding-bottom: 64px;
     padding-left: 76px;
-    padding-right: 76px;
+    padding-right: 89px;
     top: 95px;
-    left: calc(1300px / 2 - 570px);
+    left: calc(1300px / 2 - 585px);
   }
 
   .contacts__address {

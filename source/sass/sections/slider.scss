@@ -45,8 +45,8 @@
   z-index: 10;
   width: $mobile;
   margin: 0 auto;
-  padding: 0 20px;
-  padding-bottom: 20px;
+  padding: 25px 20px;
+  //padding-bottom: 20px;
 }
 
 .slider__buttons {
@@ -74,11 +74,11 @@
   }
 
   &--prev {
-    margin-right: 15px;
+    margin-right: 20px;
   }
 
   &--next {
-    margin-left: 15px;
+    margin-left: 20px;
   }
 }
 
@@ -93,7 +93,7 @@
 
 .slider__range-line {
   display: flex;
-  width: 84px;
+  width: 82px;
   background-color: $white;
   padding: 6px;
   height: 6px;
@@ -125,13 +125,16 @@
   .slider__list {
     width: 690px;
     height: 517px;
-    margin-bottom: 27px;
+    margin-bottom: 5px;
   }
 
   .slider__item {
+    left: 12px;
+    top: -10px;
+
     &--prev {
       &::before {
-        height: 347px;
+        height: 357px;
       }
 
       &::after {
@@ -140,7 +143,7 @@
         z-index: -1;
         top: 0;
         left: 0;
-        height: calc(100% - 347px);
+        height: calc(100% - 357px);
         width: 100%;
         background-color: $white;
       }
@@ -157,6 +160,10 @@
     padding: 0 30px;
   }
 
+  .slider__description {
+    font-size: 20px;
+  }
+
   .slider__range-filter {
     position: relative;
     width: 428px;
@@ -170,19 +177,19 @@
   }
 
   .slider__range-btn {
-    top: calc(50% - 18px);
-    left: calc(50% - 18px);
-    width: 36px;
-    height: 36px;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
     background-color: $lightgreen;
-    box-shadow: 0 0 0 3px #e6e6e6;
-    border: 12px solid $white;
+    box-shadow: 0 0 0 2px #e6e6e6;
+    border: 11px solid $white;
     border-radius: 50%;
     transition: 0.5s;
     cursor: ew-resize;
 
     &:active {
-      box-shadow: 0 0 0 5px $lightgreen;
+      box-shadow: 0 0 0 4px $lightgreen;
     }
   }
 }
@@ -193,19 +200,21 @@
   }
 
   .slider__list {
-    margin-bottom: 45px;
+    margin-bottom: 17px;
   }
 
   .slider__item {
     margin: 0;
+    left: 0;
+    top: -20px;
 
     &--prev {
       &::before {
-        height: 319px;
+        height: 324px;
       }
 
       &::after {
-        height: calc(100% - 319px);
+        height: calc(100% - 324px);
       }
     }
   }
@@ -214,10 +223,19 @@
     width: 610px;
     margin: 0 auto;
     padding: 0;
+    padding-left: 38px;
   }
 
   .slider__description {
     cursor: pointer;
+
+    &--prev {
+      margin-right: 23px;
+    }
+
+    &--next {
+      margin-left: 23px;
+    }
 
     &:hover,
     &:focus {

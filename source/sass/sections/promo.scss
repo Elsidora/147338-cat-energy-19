@@ -8,15 +8,15 @@
   }
   background-position: top center;
   background-repeat: no-repeat;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .promo__inner {
   display: flex;
   flex-direction: column;
-  min-height: 484px;
+  min-height: 480px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 28px;
   color: $white;
   background-image: url("../img/index-can-mobile@1x.png");
   background-position: bottom 45px center;
@@ -31,6 +31,7 @@
 .promo__title {
   line-height: 36px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .promo__paragraph {
@@ -51,15 +52,16 @@
   .promo {
     background-image: none;
     background-color: $white;
+    margin-bottom: 0;
   }
 
   .promo__inner {
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position: bottom;
+    background-position: 30px 230px;
     background-repeat: no-repeat;
     background-size: 709px 609px;
-    min-height: 852px;
-    padding-top: 50px;
+    min-height: 840px;
+    padding-top: 32px;
     padding-left: 119px;
     padding-right: 75px;
     text-align: left;
@@ -78,7 +80,7 @@
     font-size: 20px;
     line-height: 20px;
     margin: 30px 0;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 
   .promo__link-button {
@@ -94,7 +96,7 @@
 @media (min-width: $desktop) {
   .promo {
     position: relative;
-    margin-top: -150px;
+    margin-top: -168px;
     height: 696px;
 
     &::before {
@@ -135,10 +137,14 @@
 
   .promo__inner {
     background: none;
-    padding: 200px 120px;
+    padding: 222px 120px;
   }
 
   .promo__title {
     width: 418px;
+  }
+
+  .promo__paragraph {
+    margin-bottom: 53px;
   }
 }

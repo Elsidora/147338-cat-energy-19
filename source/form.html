@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" as="font" href="fonts/oswaldregular.woff2">
     <link rel="preload" as="font" href="fonts/oswaldmedium.woff2">
+
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "preview/cat-energy-form-mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "preview/cat-energy-form-tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1300px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "preview/cat-energy-form-desktop.png" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
   </head>
   <body class="page page--form">
     <div style="display:none">
@@ -129,7 +154,7 @@
       <section class="contacts">
         <div class="contacts__inner container">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__paragraph">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__paragraph">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="contacts__address">
             <span class="contacts__avenu">ул. Большая Конюшенная, д. 19/8</span>
             <span class="contacts__city">Санкт-Петербург</span>
