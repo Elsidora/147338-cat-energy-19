@@ -16,6 +16,10 @@
       img.style.width = widthImg / 2 + "px";
       img.style.height = heightImg + "px";
 
+      if (window.innerWidth >= 1300) {
+        img.style.width = widthImg / 2 + 20 + "px";
+      }
+
       const slideReady = (evt) => {
       evt.preventDefault();
       /* Теперь ползунок нажат и готов к перемещению: */
