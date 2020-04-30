@@ -1,8 +1,12 @@
 .user-data__paragraph {
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-  padding: 3px 20px;
-  margin-bottom: 15px;
+  padding: 0 20px;
+  margin-bottom: 27px;
+}
+
+.form {
+  margin-bottom: 0;
 }
 
 .form__info-cat,
@@ -20,12 +24,12 @@
 
 .form__info-cat {
   padding-top: 5px;
-  padding-bottom: 17px;
+  padding-bottom: 10px;
 }
 
 .form__radio {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 21px;
+  padding-bottom: 8px;
   margin-bottom: 42px;
 }
 
@@ -49,8 +53,8 @@
   padding: 0;
 
   &--flex {
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 21px;
   }
 }
 
@@ -59,12 +63,15 @@
   vertical-align: top;
   font-size: 24px;
   line-height: 1;
+  font-weight: 400;
   transform: translateY(-17px);
   background-color: $white;
   margin: 0;
+  margin-bottom: 11px;
   margin-left: -20px;
   padding-left: 20px;
-  padding-right: 25px;
+  padding-right: 10px;
+  letter-spacing: -0.1px;
 
   &--contacts {
     width: 242px;
@@ -87,7 +94,7 @@
 }
 
 .form__label {
-  margin-right: 8px;
+  margin-right: 16px;
 }
 
 .form__email-icon {
@@ -115,7 +122,7 @@
   font-weight: 400;
   color: $black;
   padding: 13px 15px;
-  margin: 8px 0;
+  margin: 6px 0;
   outline: none;
   border: 1px solid rgba(230, 230, 230, 0.5);
   transition: 0.5s;
@@ -125,6 +132,7 @@
   }
 
   &--contact {
+    padding-left: 12px;
     &:active .form__email-icon,
     &:active .form__phone-icon {
       fill: $lightgreen;
@@ -227,9 +235,10 @@ input[type="checkbox"]:checked + .form__label-button {
   font-weight: 400;
   color: $black;
   padding: 10px;
+  padding-left: 15px;
   width: 100%;
   min-height: 150px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 40px;
   outline: none;
 }
@@ -253,8 +262,12 @@ input[type="checkbox"]:checked + .form__label-button {
   .user-data__paragraph {
     font-size: 20px;
     line-height: 30px;
-    padding: 35px 70px 35px;
+    padding: 30px 70px 10px;
     margin-bottom: 0;
+  }
+
+  .form {
+    margin-bottom: 75px;
   }
 
   .form__info-cat,
@@ -274,37 +287,37 @@ input[type="checkbox"]:checked + .form__label-button {
   }
 
   .form__info-cat {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 42px;
+    padding-bottom: 27px;
   }
 
   .form__radio {
-    padding-top: 36px;
-    padding-bottom: 36px;
-    margin-bottom: 62px;
+    padding-top: 38px;
+    padding-bottom: 34px;
+    margin-bottom: 65px;
   }
 
   .form__input {
     font-size: 20px;
     line-height: 1;
-    padding: 15px 20px;
+    padding: 10px 20px;
     margin: 10px 0;
   }
 
   .form__email-icon {
     top: 32px;
-    right: 21px;
+    right: 17px;
   }
 
   .form__phone-icon {
     top: 29px;
-    right: 18px;
+    right: 14px;
   }
 
   .form__list {
     &--wrap {
       border: 1px solid $grey;
-      padding: 17px 0;
+      padding: 16px 0;
     }
 
     &--flex {
@@ -314,18 +327,18 @@ input[type="checkbox"]:checked + .form__label-button {
     }
 
     &--contacts {
-      margin-top: 57px;
-      margin-bottom: 87px;
+      margin-top: 31px;
+      margin-bottom: 78px;
     }
   }
 
   .form__label-button {
-    padding: 17px 0;
-    padding-left: 90px;
+    padding: 16px 0;
+    padding-left: 88px;
 
     &--radio {
       &::before {
-        top: 12px;
+        top: 7px;
         left: 29px;
         width: 40px;
         height: 40px;
@@ -335,7 +348,7 @@ input[type="checkbox"]:checked + .form__label-button {
     &--add {
       width: 283px;
       padding: 27px 0;
-      padding-left: 56px;
+      padding-left: 58px;
 
       &::before {
         top: 18px;
@@ -348,7 +361,7 @@ input[type="checkbox"]:checked + .form__label-button {
   input[type="radio"]:checked + .form__label-button {
     &--radio {
       &::before {
-        top: 12px;
+        top: 7px;
         left: 29px;
         width: 40px;
         height: 40px;
@@ -370,9 +383,9 @@ input[type="checkbox"]:checked + .form__label-button {
   .form__area-description {
     font-size: 20px;
     line-height: 30px;
-    padding: 15px 20px;
+    padding: 12px 18px;
     min-height: 174px;
-    margin-top: 67px;
+    margin-top: 39px;
     margin-bottom: 87px;
     border: 1px solid $grey;
   }
@@ -382,27 +395,29 @@ input[type="checkbox"]:checked + .form__label-button {
     line-height: 36px;
     transform: translateY(-23px);
     background-color: $white;
-    margin-left: -20px;
+    margin-left: -30px;
     padding-left: 30px;
-    padding-right: 40px;
+    padding-right: 20px;
 
     &--contacts {
-      width: 640px;
+      width: 590px;
     }
   }
 
   .form__button-wrap {
     display: flex;
     text-align: left;
-    justify-content: space-between;
-    padding-bottom: 0;
-    margin: 0 70px;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 20px 70px;
     margin-bottom: 36px;
   }
 
   .form__button {
-    width: calc(50% - 80px);
+    font-size: 20px;
+    width: 283px;
     margin: 0;
+    margin-right: 65px;
   }
 
   .form__required-field {
@@ -413,7 +428,12 @@ input[type="checkbox"]:checked + .form__label-button {
 
 @media (min-width: $desktop) {
   .user-data__paragraph {
-    padding: 35px 40px 35px;
+    padding: 25px 40px 35px;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    margin-bottom: 85px;
   }
 
   .form__inner {
@@ -423,7 +443,7 @@ input[type="checkbox"]:checked + .form__label-button {
     width: $desktop;
     margin: 0 auto;
     padding: 0 40px;
-    margin-bottom: 50px;
+    margin-bottom: 82px;
   }
 
   .form__info-cat,
@@ -437,10 +457,8 @@ input[type="checkbox"]:checked + .form__label-button {
     &--wrap {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       margin: 0;
-      padding: 0;
-      height: 228px;
+      padding: 19px 0;
     }
 
     &--contacts {
@@ -472,9 +490,15 @@ input[type="checkbox"]:checked + .form__label-button {
   }
 
   .form__label-button {
-    padding: 22px 0;
-    padding-left: 88px;
+    padding: 16px 0;
+    padding-left: 86px;
     margin: 0;
+
+    &--radio {
+      &::before {
+        left: 27px;
+      }
+    }
 
     &--add {
       width: 245px;
@@ -503,27 +527,33 @@ input[type="checkbox"]:checked + .form__label-button {
 
   .form__contacts,
   .form__area {
-    padding: 90px 40px;
+    padding: 0 40px;
   }
 
   .form__checkbox {
-    padding: 70px 40px;
+    padding: 32px 40px;
+    padding-bottom: 52px;
   }
 
   .form__title {
-    transform: translateY(-115px);
+    transform: translateY(-25px);
 
     &--add {
-      transform: translateY(-95px);
+      transform: translateY(-55px);
     }
   }
 
   .form__area-description {
-    min-height: 179px;
+    min-height: 175px;
   }
 
   .form__button-wrap {
     margin: 0 40px;
     margin-bottom: 47px;
+  }
+
+  .form__button {
+    width: calc(50% - 80px);
+    margin-right: 80px;
   }
 }
