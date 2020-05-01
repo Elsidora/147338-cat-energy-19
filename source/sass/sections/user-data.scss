@@ -133,6 +133,7 @@
 
   &--contact {
     padding-left: 12px;
+
     &:active .form__email-icon,
     &:active .form__phone-icon {
       fill: $lightgreen;

@@ -77,7 +77,7 @@ a {
   border: none;
   transition: 0.5s;
 
-  &:active:not(.catalog__offers) {
+  &:active:not(.catalog__offers):not(.catalog__link--show) {
     opacity: 0.3;
   }
 }
@@ -116,7 +116,7 @@ a {
     padding: 0 40px;
   }
 
-  .link-button:not(.catalog__offers) {
+  .link-button:not(.catalog__offers):not(.catalog__link--show) {
     &:hover,
     &:focus {
       background-color: $green;
