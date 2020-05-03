@@ -20,7 +20,10 @@
   padding: 22px;
   padding-bottom: 17px;
   cursor: pointer;
-  transition: 0.5s;
+
+  & svg {
+    transition: 2s;
+  }
 
   &:active svg {
     fill: rgba(104, 183, 56, 0.3);

@@ -96,7 +96,10 @@
   color: $black;
   text-transform: uppercase;
   padding: 23px 0;
-  transition: 0.5s;
+
+  &[href] {
+    transition: 0.5s;
+  }
 
   &[href]:active {
     opacity: 0.3;
@@ -194,7 +197,10 @@
   .logo {
     width: 202px;
     padding: 54px 0;
-    cursor: pointer;
+
+    &[href] {
+      cursor: pointer;
+    }
 
     &:hover,
     &:focus {

@@ -16,7 +16,7 @@
 
 .features__item {
   display: flex;
-  align-items: center;
+  //align-items: center;
   position: relative;
   list-style: none;
   margin: 10px 0;
@@ -31,18 +31,17 @@
     width: 60px;
     height: 60px;
     background-color: $lightgreen;
-    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 60px 60px;
+    background-position: center;
   }
 
   &--leaf {
     &::before {
       background-image: url("../img/advantage-leaf@1x.png");
-      background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/advantage-leaf@2x.png");
+        background-size: contain;
       }
     }
   }
@@ -50,10 +49,10 @@
   &--powder {
     &::before {
       background-image: url("../img/advantage-powder@1x.png");
-      background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/advantage-powder@2x.png");
+        background-size: contain;
       }
     }
   }
@@ -61,10 +60,10 @@
   &--dining {
     &::before {
       background-image: url("../img/advantage-dining@1x.png");
-      background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/advantage-dining@2x.png");
+        background-size: contain;
       }
     }
   }
@@ -72,10 +71,10 @@
   &--clock {
     &::before {
       background-image: url("../img/advantage-clock@1x.png");
-      background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/advantage-clock@2x.png");
+        background-size: contain;
       }
     }
   }

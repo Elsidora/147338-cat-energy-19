@@ -66,12 +66,7 @@
   padding-bottom: 5px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px dashed;
-  transition: 0.5s;
 
-  &:active {
-    border-bottom: none;
-  }
 
   &--prev {
     margin-right: 20px;
@@ -162,6 +157,7 @@
 
   .slider__description {
     font-size: 20px;
+    border-bottom: 1px dashed;
   }
 
   .slider__range-filter {
@@ -171,21 +167,20 @@
 
   .slider__range-line {
     width: 100%;
-    background-color: $grey;
+    background-color: $rangecolor;
     height: 6px;
     padding: 0;
   }
 
   .slider__range-btn {
-    top: calc(50% - 16px);
+    top: calc(50% - 20px);
     left: calc(50% - 10px);
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     background-color: $lightgreen;
     box-shadow: 0 0 0 2px #e6e6e6;
-    border: 11px solid $white;
+    border: 14px solid $white;
     border-radius: 50%;
-    transition: 0.5s;
     cursor: ew-resize;
 
     &:active {
@@ -241,6 +236,10 @@
     &:focus {
       border-bottom: 1px solid;
     }
+  }
+
+  .slider__range-btn {
+    left: calc(50% - 15px);
   }
 
   .slider__range-btn:hover,

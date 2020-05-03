@@ -14,10 +14,12 @@
   padding: 38px 0;
   padding-bottom: 30px;
   border-bottom: 2px solid $grey;
-  cursor: pointer;
-  transition: 0.5s;
 
-  &:active {
+  &[href] {
+    transition: 0.5s;
+  }
+
+  &[href]:active {
     opacity: 0.6;
   }
 }
@@ -50,7 +52,10 @@
   justify-content: end;
   width: 27px;
   height: 34px;
-  transition: 0.5s;
+
+  & svg {
+    transition: 0.5s;
+  }
 
   &:active svg {
     fill: rgba(104, 183, 56, 0.3);
@@ -85,8 +90,12 @@
   .footer-logo {
     padding: 100px 0;
 
-    &:hover,
-    &:focus {
+    &[href] {
+      cursor: pointer;
+    }
+
+    &[href]:hover,
+    &[href]:focus {
       opacity: 0.8;
     }
   }

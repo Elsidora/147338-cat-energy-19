@@ -1,6 +1,5 @@
 'use strict';
 
-
 (function initComparisons() {
   if (window.innerWidth >= 768) {
     const sliderHidden = document.querySelectorAll(".slider-hidden");
