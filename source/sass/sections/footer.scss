@@ -31,7 +31,7 @@
   padding: 22px 0;
 }
 
-.copyrights__link {
+.copyrights__link-brand {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -52,12 +52,9 @@
   justify-content: end;
   width: 27px;
   height: 34px;
+  transition: 0.5s;
 
-  & svg {
-    transition: 0.5s;
-  }
-
-  &:active svg {
+  &:active {
     fill: rgba(104, 183, 56, 0.3);
   }
 }
@@ -104,7 +101,7 @@
     padding: 12px 0;
   }
 
-  .copyrights__link {
+  .copyrights__link-brand {
     &:hover,
     &:focus {
       color: rgba(0, 0, 0, 0.6);
@@ -112,8 +109,8 @@
   }
 
   .copyrights__link-logo {
-    &:hover svg,
-    &:focus svg {
+    &:hover,
+    &:focus {
       fill: $lightgreen;
     }
   }
