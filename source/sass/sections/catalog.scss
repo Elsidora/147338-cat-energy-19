@@ -56,7 +56,8 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $black;
-  padding-right: 45px;
+  padding-right: 60px;
+  word-break: break-all;
 }
 
 .catalog__item-description {
@@ -84,6 +85,10 @@
   align-items: center;
   font-size: 12px;
   line-height: 16px;
+}
+
+.catalog__product-description {
+  word-break: break-all;
 }
 
 .catalog__offers {
@@ -181,7 +186,7 @@
   }
 
   .catalog__item-title {
-    padding: 0 45px;
+    padding: 0 60px;
     font-size: 20px;
   }
 
@@ -277,7 +282,7 @@
   }
 
   .catalog__item-title {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   .catalog__item-description {
@@ -287,7 +292,6 @@
 
   .catalog__title-link {
     padding: 0;
-    //margin: 0;
     margin-bottom: 18px;
   }
 

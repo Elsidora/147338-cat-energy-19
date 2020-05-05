@@ -12,6 +12,7 @@
 .example__title {
   margin: 0;
   margin-bottom: 23px;
+  word-break: break-all;
 }
 
 .example__description {
@@ -148,13 +149,13 @@
 
     &::before {
       width: calc(100vw - ((100vw - 1300px) / 2 + (690px / 2 - 1.5vw)));
-      height: 462px;
+      height: 72.7%;
       z-index: 3;
     }
 
     &::after {
       width: calc(100vw - 1300px);
-      height: 462px;
+      height: 72.7%;
     }
   }
 

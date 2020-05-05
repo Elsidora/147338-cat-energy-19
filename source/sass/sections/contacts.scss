@@ -20,7 +20,6 @@
     background-image: url("../img/map-pin.png");
     background-repeat: no-repeat;
     background-size: contain;
-
   }
 }
 
@@ -61,12 +60,18 @@
   text-transform: uppercase;
   margin: 0;
   width: 50%;
+  word-break: break-all;
 }
 
 .contacts__address {
   width: 50%;
   line-height: 20px;
   font-style: normal;
+}
+
+.contacts__avenu,
+.contacts__city {
+  word-break: break-all;
 }
 
 @media (min-width: $tablet) {
