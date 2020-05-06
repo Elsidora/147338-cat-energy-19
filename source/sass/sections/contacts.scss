@@ -60,7 +60,7 @@
   text-transform: uppercase;
   margin: 0;
   width: 50%;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .contacts__address {
@@ -71,7 +71,7 @@
 
 .contacts__avenu,
 .contacts__city {
-  word-break: break-all;
+  word-break: break-word;
 }
 
 @media (min-width: $tablet) {

@@ -116,22 +116,47 @@
 
 @media (min-width: $tablet) {
   .slider {
-    margin-top: 80px;
+    margin-top: 70px;
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 632px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: 7;
+      top: 0;
+      left: 0;
+      width: 50vw;
+      height: 100%;
+      background-image: linear-gradient($white 170px, $lightgrey 170px, $lightgrey 632px);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 6;
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: 100%;
+      background-image: linear-gradient($white 170px, $examplegrey 170px, $examplegrey 632px);
+    }
   }
 
   .slider__list {
     width: 690px;
     height: 517px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   .slider__item {
-    left: 12px;
-    top: -10px;
+    left: 5px;
+    top: 0;
 
     &--prev {
       &::before {
-        height: 357px;
+        height: 347px;
       }
 
       &::after {
@@ -140,7 +165,7 @@
         z-index: -1;
         top: 0;
         left: 0;
-        height: calc(100% - 357px);
+        height: calc(100% - 347px);
         width: 100%;
         background-color: $white;
       }
@@ -176,7 +201,7 @@
 
   .slider__range-btn {
     top: calc(50% - 20px);
-    left: calc(50% - 10px);
+    left: calc(50% - 16px);
     width: 38px;
     height: 38px;
     background-color: $lightgreen;
@@ -194,6 +219,28 @@
 @media (min-width: $desktop) {
   .slider {
     margin-top: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: calc(50% + 20px);
+      height: 100%;
+      background-image: linear-gradient($white 170px, $lightgrey 170px, $lightgrey 632px);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient($white 170px, $examplegrey 170px, $examplegrey 632px);
+    }
   }
 
   .slider__list {
@@ -207,11 +254,11 @@
 
     &--prev {
       &::before {
-        height: 324px;
+        height: 327px;
       }
 
       &::after {
-        height: calc(100% - 324px);
+        height: calc(100% - 327px);
       }
     }
   }

@@ -12,12 +12,14 @@ function _readOnlyError(name) { throw new Error("\"" + name + "\" is read-only")
       var widthImg = img.offsetWidth;
       var heightImg = img.offsetHeight;
       var widthSliderRangeFilter = sliderRangeFilter.offsetWidth;
+
       var clicked = 0;
       img.style.width = widthImg / 2 + "px";
       img.style.height = heightImg + "px";
 
       if (window.innerWidth >= 1300) {
         img.style.width = widthImg / 2 + 20 + "px";
+        widthSliderRangeFilter = sliderRangeFilter.offsetWidth + 30;
       }
 
       var slideReady = function slideReady(evt) {
