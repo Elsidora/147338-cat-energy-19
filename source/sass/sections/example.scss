@@ -1,20 +1,29 @@
 .example {
   background-color: $lightgrey;
+  padding-bottom: 5px;
 }
 
 .example__inner {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 5px;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 23px;
 }
 
 .example__description {
   padding-right: 10px;
+  margin-bottom: 25px;
 }
 
 .example__list {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -29,8 +38,9 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  text-transform: uppercase;
   width: 124px;
-  padding: 17px 0;
+  padding: 14px 0;
   text-align: center;
   border: 2px solid $grey;
   border-radius: 2px;
@@ -57,26 +67,31 @@
   .example {
     min-height: 1082px;
     padding-bottom: 0;
-    background-image: linear-gradient($white 620px, $lightgrey 620px, $lightgrey 1082px);
+    background-color: $white;
   }
 
   .example__inner {
-    padding-top: 0;
+    padding-top: 4px;
     padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .example__title {
+    padding: 40px 0;
   }
 
   .example__description {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .example__wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   .example__list {
     width: 365px;
+    margin-bottom: 0;
   }
 
   .example__item-value {
@@ -90,39 +105,84 @@
     width: auto;
     padding: 10px;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 1;
     margin-top: -18px;
   }
 
   .example__paragraph {
     font-size: 20px;
-    line-height: 32px;
+    line-height: 30px;
     text-align: right;
     width: 222px;
     margin: 0;
+    padding-top: 5px;
   }
 }
 
 @media (min-width: $desktop) {
   .example {
-    min-height: 660px;
-    background-image: linear-gradient($white 200px, $lightgrey 200px, $lightgrey 660px);
+    min-height: 632px;
+    padding-bottom: 0;
+    background: none;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: calc(100vw - 1300px);
+      height: 100%;
+      background-image: linear-gradient($white 170px, $lightgrey 170px, $lightgrey 632px);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 0;
+      top: 0;
+      right: 0;
+      width: calc(100vw - 1300px);
+      height: 100%;
+      background-image: linear-gradient($white 170px, $examplegrey 170px, $examplegrey 632px);
+    }
   }
 
   .example__desktop-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: $desktop;
-    padding: 33px 40px;
     margin: 0 auto;
   }
 
+  .example__inner {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient($white 170px, $lightgrey 170px, $lightgrey 632px);
+    }
+  }
+
   .example__title {
-    margin-bottom: 150px;
+    margin-bottom: 110px;
+    padding: 34px 0;
+  }
+
+  .example__list {
+    margin-bottom: 37px;
   }
 
   .example__description {
     width: 445px;
+    margin-bottom: 67px;
   }
 
   .example__wrap {
@@ -130,9 +190,12 @@
     align-items: stretch;
   }
 
+  .example__item-value {
+    padding-bottom: 17px;
+  }
+
   .example__item-description {
     background-color: $lightgrey;
-    margin-bottom: 40px;
   }
 
   .example__paragraph {

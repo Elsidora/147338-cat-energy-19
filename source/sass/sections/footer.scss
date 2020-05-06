@@ -11,11 +11,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 35px 0;
+  padding: 38px 0;
+  padding-bottom: 30px;
   border-bottom: 2px solid $grey;
-  cursor: pointer;
 
-  &:active {
+  &[href] {
+    transition: 0.5s;
+  }
+
+  &[href]:active {
     opacity: 0.6;
   }
 }
@@ -27,15 +31,16 @@
   padding: 22px 0;
 }
 
-.copyrights__link {
+.copyrights__link-brand {
   display: flex;
   justify-content: start;
   align-items: center;
   font-family: "Arial", sans-serif;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   font-weight: 400;
   color: $black;
+  transition: 0.5s;
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
@@ -45,11 +50,11 @@
 .copyrights__link-logo {
   display: flex;
   justify-content: end;
-  align-items: center;
   width: 27px;
   height: 34px;
+  transition: 0.5s;
 
-  &:active path {
+  &:active {
     fill: rgba(104, 183, 56, 0.3);
   }
 }
@@ -59,33 +64,44 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .footer-logo {
     padding: 55px 0;
     border-bottom: none;
+    margin-right: 19px;
   }
 
   .copyrights {
-    padding: 55px 0;
+    padding: 52px 0;
   }
 
   .copyrights__link-logo {
-    margin-left: 20px;
+    margin-left: 24px;
   }
 }
 
 @media (min-width: $desktop) {
   .footer-logo {
-    &:hover,
-    &:focus {
+    padding: 100px 0;
+
+    &[href] {
+      cursor: pointer;
+    }
+
+    &[href]:hover,
+    &[href]:focus {
       opacity: 0.8;
     }
   }
 
-  .copyrights__link {
+  .copyrights {
+    padding: 12px 0;
+  }
+
+  .copyrights__link-brand {
     &:hover,
     &:focus {
       color: rgba(0, 0, 0, 0.6);
@@ -93,8 +109,8 @@
   }
 
   .copyrights__link-logo {
-    &:hover path,
-    &:focus path {
+    &:hover,
+    &:focus {
       fill: $lightgreen;
     }
   }

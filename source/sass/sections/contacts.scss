@@ -4,18 +4,37 @@
 
 .contacts__map {
   position: relative;
-  width: $mobile;
+  width: 100%;
   margin: 0 auto;
+  height: 400px;
   margin-top: -38px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 5;
+    width: 55px;
+    height: 53px;
+    left: 132px;
+    top: 181px;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.contacts__map img {
+  height: 400px;
 }
 
 .map-api {
   display: block;
   position: absolute;
   z-index: 10;
-  width: 100vw;
-  height: 400px;
+  width: 100%;
+  height: inherit;
   margin: 0 auto;
+  top: -38px;
 }
 
 .contacts__inner {
@@ -24,8 +43,8 @@
   position: relative;
   z-index: 20;
   background-color: $lightgrey;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 
   &--index {
     background-color: $white;
@@ -41,6 +60,7 @@
   text-transform: uppercase;
   margin: 0;
   width: 50%;
+  word-break: break-word;
 }
 
 .contacts__address {
@@ -49,20 +69,30 @@
   font-style: normal;
 }
 
+.contacts__avenu,
+.contacts__city {
+  word-break: break-word;
+}
+
 @media (min-width: $tablet) {
   .contacts__map {
-    width: $tablet;
     margin-top: 0;
+
+    &::before {
+      width: 113px;
+      height: 106px;
+      left: calc(50% - 55px);
+      top: calc(50% - 43px);
+    }
   }
 
-  .contacts__map img {
-    width: $tablet;
-    height: 400px;
+  .map-api {
+    top: 0;
   }
 
   .contacts__inner {
     padding-top: 63px;
-    padding-bottom: 63px;
+    padding-bottom: 58px;
     padding-left: 71px;
     padding-right: 71px;
   }
@@ -82,7 +112,7 @@
   .contacts__avenu {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
 }
 
@@ -92,22 +122,25 @@
   }
 
   .contacts__map {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .contacts__map img {
-    width: 100vw;
-    height: 400px;
+    &::before {
+      left: calc(50% + 247px);
+    }
   }
 
   .contacts__inner {
     position: absolute;
     z-index: 100;
-    width: 570px;
-    padding: 64px 76px;
+    width: 545px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 50px;
+    padding-right: 89px;
     top: 95px;
-    left: calc(1300px / 2 - 570px);
+    left: calc(1300px / 2 - 585px);
+    background-color: $white;
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 }

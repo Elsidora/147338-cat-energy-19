@@ -23,9 +23,10 @@ a {
   line-height: 18px;
   font-weight: 400;
   color: $black;
+  background-color: $white;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -49,8 +50,11 @@ a {
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: $mobile;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .title {
@@ -61,7 +65,6 @@ a {
 }
 
 .link-button {
-  //margin: 3px 0;
   display: block;
   width: 100%;
   background-color: $lightgreen;
@@ -74,8 +77,10 @@ a {
   text-align: center;
   padding: 10px 0;
   cursor: pointer;
+  border: none;
+  transition: 0.5s;
 
-  &:active:not(.catalog__offers) {
+  &:active:not(.catalog__offers):not(.catalog__link--show) {
     opacity: 0.3;
   }
 }
@@ -84,6 +89,14 @@ a {
   .page {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .page-title {
+    font-size: 60px;
+    margin: 30px auto;
+    width: $tablet;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .container {
@@ -98,12 +111,21 @@ a {
 }
 
 @media (min-width: $desktop) {
+  .page-title {
+    width: $desktop;
+    margin-top: 20px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .container {
     width: $desktop;
     padding: 0 40px;
   }
 
-  .link-button:not(.catalog__offers) {
+  .link-button:not(.catalog__offers):not(.catalog__link--show) {
     &:hover,
     &:focus {
       background-color: $green;

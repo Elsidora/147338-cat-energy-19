@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  //padding-top: 20px;
+  //padding-bottom: 20px;
   border-bottom: 2px solid $grey;
   margin: 0 auto;
+  width: 280px;
 }
 
 .social li {
@@ -17,9 +18,14 @@
 
 .social__link {
   padding: 22px;
+  padding-bottom: 17px;
   cursor: pointer;
 
-  &:active path {
+  & svg {
+    transition: 2s;
+  }
+
+  &:active svg {
     fill: rgba(104, 183, 56, 0.3);
   }
 }
@@ -28,12 +34,31 @@
   .social {
     border-bottom: none;
   }
+
+  .social__link {
+    padding: 22px 14px;
+
+    &--vk svg {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb svg {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
   .social__link {
-    &:hover path,
-    &:focus path {
+    &:hover svg,
+    &:focus svg {
       fill: $lightgreen;
     }
   }

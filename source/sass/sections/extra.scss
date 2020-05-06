@@ -10,8 +10,9 @@
 
 .extra__item {
   list-style: none;
-  padding-bottom: 20px;
+  padding: 13px 0;
   border-top: 2px solid $grey;
+  margin-bottom: 3px;
 }
 
 .extra__item:last-child {
@@ -29,7 +30,7 @@
   margin: 0;
   margin-left: -40px;
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .extra__item-title {
@@ -39,16 +40,21 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $black;
+  margin: 0;
 }
 
 .extra__item-description {
   display: flex;
   justify-content: space-between;
   line-height: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 @media (min-width: $tablet) {
+  .extra {
+    margin-bottom: 76px;
+  }
+
   .extra__title {
     font-size: 36px;
     line-height: 1;
@@ -64,46 +70,70 @@
     padding: 0;
     border: 2px solid $grey;
     border-top: none;
-    margin-bottom: 70px;
+    margin: 50px 0;
+    margin-bottom: 67px;
   }
 
   .extra__item {
     padding: 28px 38px;
+    padding-bottom: 24px;
+  }
+
+  .extra__item:last-child {
+    border-bottom: none;
   }
 
   .extra__item-inner {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 28px;
+    margin-bottom: 23px;
   }
 
   .extra__item-title {
+    font-size: 20px;
     margin: 0;
   }
 
   .extra__item-description {
-    margin-bottom: 0;
+    margin: 0;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .extra__value-description {
+    margin-left: 49px;
   }
 }
 
 @media (min-width: $desktop) {
   .extra {
-    margin-bottom: 85px;
+    margin-bottom: 0;
+  }
+
+  .extra__title {
+    margin-left: -38px;
+  }
+
+  .extra__item-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 85px 0;
+    margin-top: 53px;
   }
 
   .extra__list {
     border: none;
-    padding: 0 38px;
+    padding: 0;
+    margin: 0;
     flex-grow: 1;
-    margin-bottom: 0;
+    margin-right: 80px;
   }
 
   .extra__item {
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
+    padding-bottom: 13px;
   }
 
   .extra__item:last-child {
@@ -114,15 +144,9 @@
     font-size: 20px;
   }
 
-  .extra__item-wrap {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 42px;
-  }
-
   .extra__item-inner {
     align-items: center;
-    margin-bottom: 0;
+    margin: 0;
     margin-right: 40px;
     flex-grow: 1;
   }
@@ -131,7 +155,8 @@
     width: 285px;
   }
 
-  .extra__span-description {
+  .extra__term-description,
+  .extra__value-description {
     min-width: 50px;
   }
 
