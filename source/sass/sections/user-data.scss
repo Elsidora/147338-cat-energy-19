@@ -24,11 +24,11 @@
 
 .form__info-cat {
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .form__radio {
-  padding-top: 21px;
+  padding-top: 15px;
   padding-bottom: 8px;
   margin-bottom: 42px;
 }
@@ -70,7 +70,7 @@
   margin-bottom: 11px;
   margin-left: -20px;
   padding-left: 20px;
-  padding-right: 10px;
+  padding-right: 22px;
   letter-spacing: -0.1px;
 
   &--contacts {
@@ -201,11 +201,11 @@ input[type="radio"]:checked + .form__label-button {
       top: 5px;
       left: 0;
       width: 33px;
-      height: 33 px;
+      height: 33px;
       background-color: $lightgreen;
       border: 11px solid $white;
       border-radius: 50%;
-      box-shadow: 1px 0 0 $grey, -1px 0 0 $grey;
+      box-shadow: 1px 1px 0 0 $grey, -1px -1px 0 0 $grey;
     }
   }
 }
