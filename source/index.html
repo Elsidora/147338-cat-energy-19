@@ -13,24 +13,29 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <div class="page-header__inner">
-        <a class="page-header__logo logo">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Иконка логотипа Кэт Энерджи" width="191" height="38">
-          </picture>
-        </a>
-        <nav class="page-header__nav main-nav main-nav--nojs">
+      <nav class="page-header__nav main-nav main-nav--nojs">
+        <div class="main-nav__inner">
+          <a class="main-nav__logo logo">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Иконка логотипа Кэт Энерджи" width="191" height="38">
+            </picture>
+          </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link main-nav__link--color main-nav__link--active main-nav__link--active-color">Главная</a>
-            </li>
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--color" href="catalog.html">Каталог продукции</a></li>
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--color" href="form.html">Подбор программы</a></li>
-          </ul>
-        </nav>
-      </div>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link main-nav__link--color main-nav__link--active main-nav__link--active-color">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--color" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--color" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="page-content">
       <h1 class="visually-hidden">Интернет-магазин питания для кошек</h1>
