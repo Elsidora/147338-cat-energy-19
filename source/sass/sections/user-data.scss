@@ -199,10 +199,10 @@ input[type="radio"]:checked + .form__label-button {
     &::before {
       top: 5px;
       left: 0;
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       background-color: $lightgreen;
-      border: 11px solid $white;
+      border: 12px solid $white;
       border-radius: 50%;
       box-shadow: 0 0 0 1px $grey;
     }
@@ -530,6 +530,7 @@ input[type="checkbox"]:checked + .form__label-button {
   input[type="radio"]:checked + .form__label-button {
     &--radio {
       &::before {
+        left: 27px;
         cursor: pointer;
       }
     }
