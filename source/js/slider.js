@@ -1,7 +1,5 @@
 'use strict';
 
-function _readOnlyError(name) { throw new Error("\"" + name + "\" is read-only"); }
-
 (function initComparisons() {
   if (window.innerWidth >= 768) {
     var sliderHidden = document.querySelectorAll(".slider-hidden");
@@ -19,7 +17,7 @@ function _readOnlyError(name) { throw new Error("\"" + name + "\" is read-only")
 
       if (window.innerWidth >= 1300) {
         img.style.width = widthImg / 2 + 20 + "px";
-        widthSliderRangeFilter = sliderRangeFilter.offsetWidth + 30;
+        widthSliderRangeFilter = sliderRangeFilter.offsetWidth;
       }
 
       var slideReady = function slideReady(evt) {
@@ -56,8 +54,8 @@ function _readOnlyError(name) { throw new Error("\"" + name + "\" is read-only")
       var slideMove = function slideMove(evt) {
         var position = getCursorPosition(evt);
         if (clicked === 0) return false;
-        if (position < 0) position = (_readOnlyError("position"), 0);
-        if (position > widthSliderRangeFilter) position = (_readOnlyError("position"), widthSliderRangeFilter);
+        if (position < 0) position = 0;
+        if (position > widthSliderRangeFilter) position = widthSliderRangeFilter;
         slide(position);
       };
 

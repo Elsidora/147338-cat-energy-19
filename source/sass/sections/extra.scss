@@ -16,6 +16,7 @@
 }
 
 .extra__item:last-child {
+  padding-bottom: 16px;
   border-bottom: 2px solid $grey;
 }
 
@@ -30,7 +31,7 @@
   margin: 0;
   margin-left: -40px;
   padding-left: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .extra__item-title {
@@ -70,16 +71,17 @@
     padding: 0;
     border: 2px solid $grey;
     border-top: none;
-    margin: 50px 0;
+    margin: 52px 0;
     margin-bottom: 67px;
   }
 
   .extra__item {
-    padding: 28px 38px;
-    padding-bottom: 24px;
+    padding: 26px 37px;
+    padding-bottom: 26px;
   }
 
   .extra__item:last-child {
+    padding-bottom: 24px;
     border-bottom: none;
   }
 
@@ -118,7 +120,7 @@
     display: flex;
     justify-content: space-between;
     margin: 85px 0;
-    margin-top: 53px;
+    margin-top: 55px;
   }
 
   .extra__list {
@@ -132,11 +134,13 @@
   .extra__item {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
-    padding-bottom: 13px;
+    padding: 16px 0;
+    padding-bottom: 12px;
+    border-top: 1px solid $grey;
   }
 
   .extra__item:last-child {
+    padding-bottom: 15px;
     border-bottom: 1px solid $grey;
   }
 
@@ -145,14 +149,16 @@
   }
 
   .extra__item-inner {
-    align-items: center;
     margin: 0;
-    margin-right: 40px;
+    margin-right: 30px;
     flex-grow: 1;
+    padding: 9px 0;
+    padding-bottom: 0;
   }
 
   .extra__item-description {
-    width: 285px;
+    width: 295px;
+    padding-top: 5px;
   }
 
   .extra__term-description,
@@ -162,6 +168,10 @@
 
   .extra__link {
     width: 245px;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
   }
 }
