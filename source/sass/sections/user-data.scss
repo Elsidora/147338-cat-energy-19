@@ -542,6 +542,7 @@ input[type="checkbox"]:checked + .form__label-button {
     padding: 16px 0;
     padding-left: 86px;
     margin: 0;
+    cursor: pointer;
 
     &--radio {
       &::before {
@@ -554,6 +555,7 @@ input[type="checkbox"]:checked + .form__label-button {
       width: 245px;
       padding: 10px 0;
       padding-left: 58px;
+      cursor: pointer;
 
       &::before {
         top: 0;
@@ -571,6 +573,22 @@ input[type="checkbox"]:checked + .form__label-button {
     }
   }
 
+  input[type="radio"]:focus + .form__label-button {
+    &--radio {
+      &::before {
+        box-shadow: 0 0 0 1px $black;
+      }
+    }
+  }
+
+  input[type="radio"]:focus:checked + .form__label-button {
+    &--radio {
+      &::before {
+        box-shadow: 0 0 0 1px $black;
+      }
+    }
+  }
+
   input[type="checkbox"]:checked + .form__label-button {
     &--add {
       &::before {
@@ -579,6 +597,23 @@ input[type="checkbox"]:checked + .form__label-button {
       }
     }
   }
+
+  input[type="checkbox"]:focus + .form__label-button {
+    &--add {
+      &::before {
+        border: 1px solid $black;
+      }
+    }
+  }
+
+  input[type="checkbox"]:focus:checked + .form__label-button {
+    &--add {
+      &::before {
+        border: 1px solid $black;
+      }
+    }
+  }
+
 
   .fieldset-wrap {
     width: $desktop;
@@ -601,6 +636,11 @@ input[type="checkbox"]:checked + .form__label-button {
   .form__area-description {
     min-height: 175px;
     margin-bottom: 88px;
+    border: 1px solid $lightgrey;
+
+    &:focus {
+      border: 1px solid $black;
+    }
   }
 
   .form__button-wrap {
