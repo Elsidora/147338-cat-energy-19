@@ -610,7 +610,6 @@ input[type="checkbox"]:checked + .form__label-button {
     &--add {
       &::before {
         border: 1px solid $black;
-
       }
     }
   }
@@ -637,7 +636,6 @@ input[type="checkbox"]:checked + .form__label-button {
   .form__area-description {
     min-height: 175px;
     margin-bottom: 88px;
-    border: none;
     border: 1px solid $lightgrey;
 
     &:focus {
