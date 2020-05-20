@@ -1,5 +1,5 @@
 .promo {
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($lightgreen 305px, $white 305px, $white 484px);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient($backcolor 305px, $white 305px, $white 484px);
 
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -96,7 +96,7 @@
 @media (min-width: $desktop) {
   .promo {
     position: relative;
-    margin-top: -168px;
+    margin-top: -170px;
     height: 696px;
 
     &::before {
@@ -104,13 +104,13 @@
       content: "";
       top: 0;
       right: 0;
-      width: 50%;
+      left: 50%;
       height: 100%;
-      background-color: $lightgreen;
+      background-color: $backcolor;
       background-image: url("../img/index-background-desktop@1x.jpg");
-      background-position: top right -65px;
+      background-position: top right;
       background-repeat: no-repeat;
-      background-size: auto 696px;
+      background-size: 720px 696px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");

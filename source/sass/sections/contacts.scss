@@ -34,7 +34,6 @@
   width: 100%;
   height: inherit;
   margin: 0 auto;
-  top: -38px;
 }
 
 .contacts__inner {
@@ -133,11 +132,15 @@
     width: 545px;
     padding-top: 64px;
     padding-bottom: 64px;
-    padding-left: 50px;
-    padding-right: 89px;
+    padding-left: 75px;
+    padding-right: 64px;
     top: 95px;
     left: calc(1300px / 2 - 585px);
     background-color: $white;
+  }
+
+  .contacts__paragraph {
+    margin-right: 25px;
   }
 
   .contacts__address {

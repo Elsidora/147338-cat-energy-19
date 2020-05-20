@@ -2,35 +2,8 @@
   background-color: $white;
 }
 
-.page-header__inner {
-  display: flex;
-  justify-content: space-between;
-  width: $mobile;
-  margin: 0 auto;
-  position: relative;
-  min-height: 66px;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 211px;
-  padding: 14px 0;
-  padding-left: 20px;
-  z-index: 2;
-  margin: 0;
-  margin-right: -211px;
-  transition: 0.5s;
-
-  &:active {
-    opacity: 0.6;
-  }
-}
-
 .main-nav {
   position: relative;
-  flex-grow: 1;
 
   &--closed .main-nav__toggle::before {
     content: "";
@@ -70,12 +43,33 @@
   }
 }
 
+.main-nav__inner {
+  display: flex;
+  justify-content: space-between;
+  width: $mobile;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 211px;
+  padding: 14px 0;
+  padding-left: 20px;
+  margin: 0;
+  transition: 0.5s;
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  padding-top: 66px;
 }
 
 .main-nav__item {
@@ -129,30 +123,29 @@
 }
 
 @media (min-width: $tablet) {
-  .page-header__inner {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
     width: $tablet;
     padding: 0 30px;
-    min-height: 108px;
-    position: static;
-    height: 0;
-  }
-
-  .logo {
-    width: 172px;
-    padding: 24px 0 24px;
-    position: static;
-    z-index: 0;
-    margin-right: 0;
-  }
-
-  .main-nav {
-    position: static;
-    flex-grow: 0;
-    margin: 0;
+    margin: 0 auto;
 
     &--nojs .main-nav__list {
       display: flex;
     }
+  }
+
+  .main-nav__inner {
+    justify-content: flex-start;
+    width: 172px;
+    padding: 0;
+    margin: 0;
+    position: static;
+  }
+
+  .logo {
+    width: 172px;
+    padding: 24px 0 20px;
   }
 
   .main-nav__list {
@@ -186,17 +179,25 @@
 }
 
 @media (min-width: $desktop) {
-  .page-header__inner {
+  .main-nav {
     position: relative;
     width: $desktop;
     padding: 0 40px;
-    min-height: 168px;
     z-index: 10;
   }
 
+  .main-nav__inner {
+    width: 203px;
+  }
+
   .logo {
-    width: 202px;
-    padding: 54px 0;
+    width: 203px;
+    padding: 54px 0 50px;
+
+    & img {
+      width: 203px;
+      height: 60px;
+    }
 
     &[href] {
       cursor: pointer;
@@ -217,7 +218,10 @@
     font-size: 20px;
     padding: 20px 0;
     padding-bottom: 10px;
-    cursor: pointer;
+
+    &[href] {
+      cursor: pointer;
+    }
 
     &--color {
       color: $white;

@@ -1,9 +1,7 @@
 .social {
   display: flex;
-  justify-content: center;
-  padding: 0;
-  //padding-top: 20px;
-  //padding-bottom: 20px;
+  flex-wrap: wrap;
+  padding: 0 63px;
   border-bottom: 2px solid $grey;
   margin: 0 auto;
   width: 280px;
@@ -14,15 +12,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 17px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .social__link {
-  padding: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
   padding-bottom: 17px;
   cursor: pointer;
 
   & svg {
-    transition: 2s;
+    transition: 0.35s;
+  }
+
+  &--vk svg {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--insta svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--fb svg {
+    width: 10px;
+    height: 19px;
   }
 
   &:active svg {
@@ -33,11 +53,14 @@
 @media (min-width: $tablet) {
   .social {
     border-bottom: none;
+    padding: 0 66px;
+  }
+
+  .social li {
+    margin-right: 10px;
   }
 
   .social__link {
-    padding: 22px 14px;
-
     &--vk svg {
       width: 30px;
       height: 16px;

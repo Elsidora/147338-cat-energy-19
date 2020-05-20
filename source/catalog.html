@@ -13,24 +13,29 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <div class="page-header__inner">
-        <a href="index.html" class="page-header__logo logo">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Иконка логотипа Кэт Энерджи" width="191" height="38">
-          </picture>
-        </a>
-        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+      <nav class="page-header__nav main-nav main-nav--nojs">
+        <div class="main-nav__inner">
+          <a href="index.html" class="main-nav__logo logo">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Иконка логотипа Кэт Энерджи" width="191" height="38">
+            </picture>
+          </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link main-nav__link--active">Каталог продукции</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
-          </ul>
-        </nav>
-      </div>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="page-content page-content--catalog">
       <h1 class="page-title">Каталог продукции</h1>
@@ -407,21 +412,21 @@
         </a>
         <ul class="page-footer__social social">
           <li>
-            <a href="#" class="social__link social__link--vk"><span class="visually-hidden">VKontakte</span>
+            <a href="#" class="social__link social__link--vk" target="_blank"><span class="visually-hidden">VKontakte</span>
               <svg class="social__vk" width="30" height="16">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="#" class="social__link social__link--insta"><span class="visually-hidden">Instagram</span>
+            <a href="#" class="social__link social__link--insta" target="_blank"><span class="visually-hidden">Instagram</span>
               <svg class="social__insta" width="23" height="23">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="#" class="social__link social__link--fb"><span class="visually-hidden">Facebook</span>
+            <a href="#" class="social__link social__link--fb" target="_blank"><span class="visually-hidden">Facebook</span>
               <svg class="social__fb" width="14" height="28">
                 <use xlink:href="#icon-fb"></use>
               </svg>

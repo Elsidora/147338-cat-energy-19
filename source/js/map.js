@@ -5,7 +5,7 @@ var init = function init() {
     zoom: 17
   });
 
-  var myPlacemark = new ymaps.Placemark([59.938635, 30.323118], {
+  var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
     hintContent: 'Cat Energy',
     balloonContent: 'Мы здесь'
   },
