@@ -486,7 +486,7 @@ input[type="checkbox"]:checked + .form__label-button {
 
     &--contacts {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
       margin-top: 28px;
       margin-bottom: 80px;
     }
@@ -494,7 +494,12 @@ input[type="checkbox"]:checked + .form__label-button {
 
   .form__item {
     &--contacts {
+      margin-right: 80px;
       width: 570px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
     }
   }
 
@@ -613,7 +618,6 @@ input[type="checkbox"]:checked + .form__label-button {
       }
     }
   }
-
 
   .fieldset-wrap {
     width: $desktop;

@@ -82,15 +82,15 @@
 
 .program__link {
   position: relative;
-  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   font-weight: 400;
   color: $black;
   text-transform: uppercase;
   margin-top: auto;
   padding: 20px 0;
+  padding-right: 146px;
 
   &::after {
     position: absolute;
@@ -184,6 +184,7 @@
   .program__link {
     font-size: 20px;
     line-height: 20px;
+    padding-right: 260px;
 
     &::after {
       left: 132px;
@@ -261,6 +262,7 @@
 
   .program__link {
     padding: 10px 0;
+    padding-right: 345px;
 
     &::after {
       top: -5px;
