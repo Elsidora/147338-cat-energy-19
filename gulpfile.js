@@ -77,13 +77,6 @@ gulp.task("html", function() {
     .pipe(gulp.dest("build"));
 });
 
-/*gulp.task("useref", function() {
-  return gulp
-    .src("source/*.html")
-    .pipe(useref())
-    .pipe(gulpif("*.js", uglify()))
-    .pipe(gulp.dest("build"));
-*/
 gulp.task("clean", function() {
   return del("build");
 });
@@ -96,7 +89,6 @@ gulp.task("copy", function() {
         "source/fonts/**/*.{woff,woff2}",
         "source/img/**",
         "!source/img/svg-sp/**",
-        "source/js/**",
         "source/*.ico"
       ],
       {
